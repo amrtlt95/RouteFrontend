@@ -8,23 +8,25 @@
 <body>
 
 
-    <div> <!--hero-section-->
 
-        <div> <!--"header-p-buttons"-->
-            <h1>Transform Your Body at FitCore Gym</h1>
-            <p>Join our premium fitness facility with state-of-the-art equipment, expert trainers, and a supportive
+    <div class="hero"> <!--hero-section-->
+
+        <div class="hero-header"> <!--"header-p-buttons"-->
+            <h1 class="header-font">Transform Your Body at FitCore Gym</h1>
+            <p class="paragraph-font">Join our premium fitness facility with state-of-the-art equipment, expert
+                trainers, and a supportive
                 community dedicated to your success.</p>
 
-            <button>Start Your Journey</button>
-            <button>Learn More</button>
+            <button class="start-journy btn">Start Your Journey</button>
+            <button class="learn-more btn">Learn More</button>
         </div>
 
 
-        <div> <!--image-->
+        <div class="hero-img"> <!--image-->
             <img src="images/hero-section-img.png" alt="Gym has alot of treadmills" />
+
         </div>
-
-
+        <div class="clear-fix"></div>
     </div>
 
 
@@ -32,22 +34,38 @@
 
 
 
-    <div> <!--"why-choose-us"-->
-        <div> <!--Header and p -->
+    <div class="why-choose-us-container"> <!--"why-choose-us"-->
+        <div class="why-choose-us"> <!--Header and p -->
 
-            <h2>Why Choose FitCore Gym</h2>
-            <p>We provide everything you need to achieve your fitness goals in a welcoming and professional environment.
+            <h2 class="text-center header-font">Why Choose FitCore Gym</h2>
+            <p class="paragraph-font text-center">We provide everything you need to achieve your fitness goals in a
+                welcoming and professional
+                environment.
             </p>
         </div>
 
         <div> <!--three-squares-container-->
 
 
-            <div> <!--square 1-->
+            <div class="premium-equipment"> <!--square 1-->
 
-                <div><!--empty white square soournded by a blue border icon--></div>
+                <div class="border"><!--empty white square -->
+
+
+
+                    <div> <!--blue border-->
+
+                    </div>
+                </div>
+
+
+
+
+
+
                 <h3>Premium Equipment</h3>
-                <p>Access to the latest fitness equipment from top brands, maintained to the highest standards for your
+                <p>Access to the latest fitness equipment from top brands, maintained to the highest standards for
+                    your
                     safety and performance.</p>
             </div>
 
@@ -56,7 +74,8 @@
 
                 <div><!--empty white circle soournded by a green border icon--></div>
                 <h3>Expert Trainers</h3>
-                <p>Certified personal trainers with years of experience ready to guide you through your fitness journey
+                <p>Certified personal trainers with years of experience ready to guide you through your fitness
+                    journey
                     with personalized programs.</p>
             </div>
 
@@ -163,7 +182,8 @@
                 </div>
 
 
-                <p>"The equipment is top-notch and always clean. Being open 24/7 means I can work out whenever it fits
+                <p>"The equipment is top-notch and always clean. Being open 24/7 means I can work out whenever it
+                    fits
                     my schedule. Highly recommend!"</p>
 
             </div>
@@ -185,7 +205,8 @@
                 </div>
 
 
-                <p>"The personal training sessions helped me train for my first marathon. The expertise and motivation
+                <p>"The personal training sessions helped me train for my first marathon. The expertise and
+                    motivation
                     from the staff is unmatched."</p>
 
             </div>
@@ -246,40 +267,42 @@
 
         <div> <!--  header and p-->
             <h2>Ready to Start Your Fitness Journey?</h2>
-            <p>Join FitCore today and get access to premium facilities, expert guidance, and a community that supports your goals. </p>
-        </div> 
+            <p>Join FitCore today and get access to premium facilities, expert guidance, and a community that
+                supports your goals. </p>
+        </div>
 
 
 
         <div> <!--  form-->
             <form>
                 <label for="first-name">First Name</label>
-                <input id="first-name" name="first-name" placeholder="Enter your first name"/>
+                <input id="first-name" name="first-name" placeholder="Enter your first name" />
 
 
                 <label for="last-name">Last Name</label>
-                <input id="last-name" name="last-name" placeholder="Enter your last name"/>
+                <input id="last-name" name="last-name" placeholder="Enter your last name" />
 
 
-                 <label for="email">Email Address</label>
-                <input id="email" name="email" placeholder="your.email@example.com" type="email"/>
+                <label for="email">Email Address</label>
+                <input id="email" name="email" placeholder="your.email@example.com" type="email" />
 
-                 <label for="phone">Phone Number</label>
-                <input id="phone" name="phone" placeholder="(555 123-4567)" type="tel"/>
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" placeholder="(555 123-4567)" type="tel" />
 
 
-                 <label for="membership-type">Membership Type</label>
+                <label for="membership-type">Membership Type</label>
                 <select id="membership-type">
                     <option name="membership-type" value="basic">Basic Membership-$29/month</option>
                 </select>
 
 
 
-                 <label for="goals">Fitness Goals</label>
-                <textarea id="goals" name="goals" placeholder="Tell us about your fitness goals and what you hope to achieve"></textarea>
+                <label for="goals">Fitness Goals</label>
+                <textarea id="goals" name="goals"
+                    placeholder="Tell us about your fitness goals and what you hope to achieve"></textarea>
 
                 <button type="submit">Join FitCore Today</button>
-                
+
 
             </form>
             <p>By submitting this form, you agree to our terms of service and privacy policy.</p>
@@ -295,7 +318,8 @@
         <div> <!--FotCore-->
 
             <h2>FitCore</h2>
-            <p>Transform your body and mind at our premium fitness facility. Join thousands of members who have achieved their fitness goals with our expert guidance and state-of-the-art equipment. </p>
+            <p>Transform your body and mind at our premium fitness facility. Join thousands of members who have
+                achieved their fitness goals with our expert guidance and state-of-the-art equipment. </p>
             <a href="https://facebook.com">Facebook</a>
             <a href="https://instgram.com">Instgram</a>
             <a href="https://twitter.com">Twitter</a>
@@ -319,11 +343,11 @@
             <h2>Contact Info</h2>
             <address>
                 <h3>Address</h3>
-                123 Fitness Street, Downtown City,<br/>
-                DC 12345<br/>
+                123 Fitness Street, Downtown City,<br />
+                DC 12345<br />
                 <h3>Phone</h3>
                 <a href="tel:5551234567">(555) 123-4567</a>
-                <br/>
+                <br />
                 <h3>Hours</h3>
                 Open 24/7
             </address>
@@ -332,13 +356,16 @@
 
 
 
-        <hr/>
+        <hr />
 
         <p>© 2025 FitCore Gym. All rights reserved.</p>
 
         <div> <!--last links-->
 
         </div>
+    </div>
+
+
     </div>
 
 
