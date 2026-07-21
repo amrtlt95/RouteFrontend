@@ -1,8 +1,7 @@
+/* Common classes */
 .clear-fix {
     clear: both;
 }
-
-
 
 .text-center {
     text-align: center;
@@ -13,44 +12,105 @@
 }
 
 
-.hero-header {
-
-    width: 60%;
-    float: left;
-
-}
-
-
-.hero-header h1 {
-    font-size: 450%;
-}
-
 .header-font {
     color: #101828;
-    font-weight: bold;
-    margin-block-start: 0;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 
 .paragraph-font {
     color: #4A5665;
-    font-size: 130%;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.hero-img img {
-    width: 100%;
-    border-radius: 20px;
+
+h1 {
+    font-size: 400%;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+
+
+
+h2 {
+    font-size: 200%;
+}
+
+
+p {
+    font-size: 120%;
+}
+
+img {
+    width: 100%
+}
+
+/* -------------------------------------------------------------------------- */
+
+
+/* First two sections */
+
+.first-two-section-containers {
+    width: 40%;
+    margin-block-start: 5%;
+    margin-inline: auto;
+
+    background-color: red;
+}
+
+/* -------------------------------------------------------------------------- */
+
+
+
+
+/* Hero */
+
+
+
+
+
+/* Containers */
+
+.hero {
+    background-color: burlywood;
+    margin-block-end: 10%;
+}
+
+
+
+.hero-header {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-inline-end: 10%;
+    background-color: aqua;
 
 }
+
+/* ------------------------------ */
+
+/* image */
+.hero-img img {
+
+    border-radius: 20px;
+    background-color: teal;
+
+}
+
 
 .hero-img {
-    width: 35%;
+    width: 40%;
     float: left;
+    background-color: tomato;
 
 
 
 }
+
+/* ------------------------------ */
+
+/* buttons */
 
 .hero-header .btn {
     padding-inline: 25px;
@@ -60,6 +120,8 @@
     font-size: 110%;
     margin-inline-end: 2%;
     /* border: 0; */
+
+    background-color: brown;
 }
 
 
@@ -74,55 +136,218 @@
     background-color: transparent;
 }
 
-.hero {
-    margin-block-end: 200px;
-    margin-inline-start: 4%;
-    margin-inline-end: 12%;
-    margin-block-start: 5%;
+/* --------------------------------------------------------------------------------- */
 
-}
 
+/* .why-choose-us*/
+
+
+
+/* Containers */
 
 
 .why-choose-us {
-    width: 70%;
+    width: 80%;
     margin-inline: auto;
     margin-block-end: 50px;
+    background-color: blueviolet;
 }
 
-.why-choose-us h2 {
-    font-size: 200%;
+
+
+
+.why-choose-us-container .cards-container {
+    background-color: chartreuse;
+    /* margin-inline: auto; */
+    width: 130%;
+    margin-block-end: 50px;
+
 }
 
-.premium-equipment .border {
+
+.why-choose-us-container .card {
+    width: 20%;
+    padding: 30px;
+    border-radius: 15px;
+    float: left;
+    margin-inline-end: 3%;
+    height: 100%;
+
+}
+
+
+
+.premium-equipment {
+    background-color: #dbeafe;
+}
+
+
+.expert-trainers {
+    background-color: #d0fae5;
+}
+
+.flexible-hours {
+    background-color: #f3e8ff;
+}
+
+
+
+
+
+.more-than-just-a-gym {
+    width: 110%
+}
+
+.headers-container {
+    width: 40%;
+    float: left;
+    background-color: yellow;
+}
+
+
+.header-paragraph-container {
+    /* float: left; */
+    border-left: 5px black solid;
+    /* margin-inline-start: 10px; */
+    padding-inline-start: 50px;
+}
+
+
+
+/* ------------------------------ */
+/* common */
+.border {
 
     width: 30px;
-    background-color: transparent;
-
-    border: #155DFC solid 15px;
     border-radius: 5px;
-
-    /* background-color: red; */
     padding: 0;
-
-
+    margin-inline: auto;
 }
 
 
 .border div {
     width: 30px;
     background-color: white;
-
     height: 30px;
+}
 
-    /* border: 4px solid #155DFC; */
+
+/* ------------------------------ */
+/* individual elements */
+.premium-equipment p,
+.expert-trainers p,
+.flexible-hours p {
+    font-size: 89%;
+}
+
+
+.premium-equipment-border {
+    background-color: #155DFC;
+    border: #155DFC solid 15px;
+}
+
+
+
+.premium-equipment-inner-shape {
     border-radius: 5px;
+}
 
 
-    /* background-color: teal; */
+
+
+.expert-trainers-border {
+    background-color: #009966;
+    border: #009966 solid 15px;
+}
+
+.expert-trainers-inner-shape {
+    border-radius: 15px;
+}
 
 
 
+
+
+
+.flexible-hours-border {
+    background-color: #9810fa;
+    border: #9810fa solid 15px;
+}
+
+
+
+.flexible-hours-inner-shape {
+    border-radius: 5px;
+}
+
+
+.more-than-just-a-gym div img {
+
+    border-radius: 20px;
+    /* background-color: cornflowerblue; */
+}
+
+
+
+.more-than-just-a-gym .img-container {
+    width: 50%;
+    background-color: cornflowerblue;
+    float: left;
+    margin-inline-end: 50px;
+}
+
+
+.headers-container h2 {
+    margin-block-start: 0;
+
+
+}
+
+.headers-container p {
+    margin-block-end: 0;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* what our members say */
+
+/* containers */
+.what-our-members-say-container {
+    background-color: #f9fafb;
+}
+
+
+.what-our-members-say-container .cards-container .img-container {
+    width: 20%;
+    float: left;
+}
+
+.what-our-members-say-container .cards-container {
+    width: 80%;
+    background-color: #009966;
+    margin-inline: auto;
+}
+
+.what-our-members-say-container .card {
+    width: 30%;
+    float: left;
+    margin-inline-end: 2%;
+}
+
+
+.david-martinez {
+    background-color: #eff6ff;
+}
+
+
+.mike-chen {
+    background-color: #ecfdf5;
+}
+
+
+
+.james-rodriguez {
+    background-color: #faf5ff;
 }
 
 
@@ -131,8 +356,20 @@
 
 
 
-/* 
-.premium-equipment .border {
-    border: #155DFC solid 20px;
-    
-} */
+.what-our-members-say-container .profile-header {
+
+    width: 80%;
+    background-color: slategrey;
+    margin-inline: auto;
+    margin-block-start: 0;
+
+}
+
+/* --------------------- */
+
+/* individual elements */
+
+.what-our-members-say-container .cards-container div img {
+
+    border-radius: 50%;
+}
