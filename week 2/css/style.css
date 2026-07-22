@@ -1,4 +1,18 @@
 /* Common classes */
+body{
+    margin:0;
+}
+.float-left{
+    float:left;
+}
+
+.margin-inline-auto{
+    margin-inline: auto;
+}
+
+.float-right{
+    float:right;
+}
 .clear-fix {
     clear: both;
 }
@@ -11,7 +25,16 @@
     text-align: left;
 }
 
+.black-bg {
+    background-color: black;
+}
 
+.white-bg{
+    background-color: white;
+}
+.text-white{
+    color: white;
+}
 .header-font {
     color: #101828;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -25,7 +48,7 @@
 
 
 h1 {
-    font-size: 400%;
+    font-size: 50px;
     margin-block-end: 0;
     margin-block-start: 0;
 }
@@ -34,12 +57,12 @@ h1 {
 
 
 h2 {
-    font-size: 200%;
+    font-size: 30px;
 }
 
 
 p {
-    font-size: 120%;
+    font-size: 15px;
 }
 
 img {
@@ -48,12 +71,12 @@ img {
 
 
 
-form input {
+input , select, textarea, button{
     margin-block-start: 5px;
 
     margin-block-end: 15px;
 
-    padding: 7px;
+    /* padding: 7px; */
     border-radius: 7px;
 }
 
@@ -63,9 +86,9 @@ form input {
 /* First two sections */
 
 .first-two-section-containers {
-    width: 40%;
-    margin-block-start: 5%;
-    margin-inline: auto;
+    width: 60%;
+    margin-block-start: 20px;
+    
 
     /* background-color: red; */
 }
@@ -93,8 +116,7 @@ form input {
 .hero-header {
     width: 50%;
     height: 100%;
-    float: left;
-    margin-inline-end: 10%;
+    margin-inline-end: 20px;
     /* background-color: aqua; */
 
 }
@@ -112,7 +134,6 @@ form input {
 
 .hero-img {
     width: 40%;
-    float: left;
     /* background-color: tomato; */
 
 
@@ -123,24 +144,20 @@ form input {
 
 /* buttons */
 
-.hero-header .btn {
+ .btn {
     padding-inline: 25px;
     padding-block: 15px;
     border-radius: 10px;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 110%;
-    margin-inline-end: 2%;
+    font-size: 15px;
+    margin-inline-end: 15px;
     /* border: 0; */
 
     /* background-color: brown; */
 }
 
 
-.hero-header .start-journy {
-    background-color: black;
-    color: white;
 
-}
 
 .hero-header .learn-more {
     color: #263245;
@@ -159,7 +176,6 @@ form input {
 
 .why-choose-us {
     width: 80%;
-    margin-inline: auto;
     margin-block-end: 50px;
     /* background-color: blueviolet; */
 }
@@ -169,7 +185,6 @@ form input {
 
 .why-choose-us-container .cards-container {
     /* background-color: chartreuse; */
-    margin-inline: auto;
     width: 80%;
     margin-block-end: 50px;
     font-size: 11px;
@@ -181,7 +196,6 @@ form input {
     width: 20%;
     padding: 30px;
     border-radius: 15px;
-    float: left;
     margin-inline-end: 3%;
     height: 100%;
 
@@ -212,14 +226,12 @@ form input {
 
 .headers-container {
     width: 40%;
-    float: right;
     /* background-color: yellow; */
     font-size: 11px;
 }
 
 
 .header-paragraph-container {
-    /* float: left; */
     border-left: 5px black solid;
     /* margin-inline-start: 10px; */
     padding-inline-start: 50px;
@@ -234,13 +246,12 @@ form input {
     width: 30px;
     border-radius: 5px;
     padding: 0;
-    margin-inline: auto;
+  
 }
 
 
 .border div {
     width: 30px;
-    background-color: white;
     height: 30px;
 }
 
@@ -305,7 +316,6 @@ form input {
 .more-than-just-a-gym .img-container {
     width: 50%;
     /* background-color: cornflowerblue; */
-    float: left;
     margin-inline-end: 60px;
 }
 
@@ -334,19 +344,16 @@ form input {
 .what-our-members-say-container .cards-container .img-container {
     width: 20%;
     margin-inline-start: 70px;
-    float: left;
 }
 
 .what-our-members-say-container .cards-container {
     width: 80%;
     /* background-color: #009966; */
-    margin-inline: auto;
     margin-block-end: 50px;
 }
 
 .what-our-members-say-container .card {
     width: 30%;
-    float: left;
     margin-inline-end: 2%;
 }
 
@@ -376,7 +383,6 @@ form input {
 
     width: 80%;
     /* background-color: slategrey; */
-    margin-inline: auto;
     margin-block-start: 0;
 
 }
@@ -384,7 +390,6 @@ form input {
 
 .stat-container {
     width: 80%;
-    margin-inline: auto;
     background-color: #f1f5f9;
     border-radius: 10px
 }
@@ -394,7 +399,6 @@ form input {
     /* background-color: red; */
     width: 20%;
     margin-inline-start: 5%;
-    float: left;
 }
 
 
@@ -413,13 +417,12 @@ form input {
 /* Containers */
 .ready-to-start-your-fitness-journey-container {
     width: 70%;
-    background-color: red;
-    margin-inline: auto;
+    /* background-color: red; */
+    margin-block-end: 100px;
 }
 
 .ready-to-start-your-fitness-journey-container .headers {
     width: 35%;
-    margin-inline: auto;
     margin-block-end: 35px;
 }
 
@@ -430,25 +433,68 @@ form input {
 
 .first-last-name-container {
     width: 40%;
-    float: left;
-    /* margin-inline: auto; */
-    margin-inline-start: 5%;
-    background-color: #009966;
-
-
 }
 
 
 
 
-.first-last-name-container input {
-
-    width: 60%;
-
-
+.form-element-container{
+     margin-inline-start: 5%;
+    /* background-color: #009966; */
+      
 }
 
 
-.last-name-container {}
+
 
 /* individual elements */
+
+
+.form-element-container input, .form-element-container textarea, .form-element-container select ,  .form-element-container button{
+     padding: 20px;
+      width: 80%;
+
+      
+}
+
+
+
+
+
+
+/* ----------------------------------- */
+
+/* footer */
+/* Conteiners */
+.footer{
+    background-color:#101828;
+    padding-inline-start: 50px;
+    padding-block:50px;
+}
+
+.footer .section-1{
+    width: 40%;
+   
+}
+
+
+
+.footer .section-2-and-3{
+    width: 20%;
+   
+}
+
+
+
+.footer .section-2 a{
+    display: block;
+    margin-block-end: 15px;
+}
+
+
+
+.footer .section-3 h3{
+    /* width: 20%; */
+    margin-block-end: 5px;
+}
+
