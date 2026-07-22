@@ -229,12 +229,12 @@
 
 
             <div class="card james-rodriguez"><!-- card 3 -->
-                <div class="img-container"><!-- img-->
-                    <img src="images/avatar-3.jpg" src="a member named James Rodriguez" />
-                </div>
+
 
                 <div class="profile-header"> <!-- photo , name , info container-->
-
+                    <div class="img-container"><!-- img-->
+                        <img src="images/avatar-3.jpg" src="a member named Mike Chen" />
+                    </div>
 
 
                     <h3 class="header-font">James Rodriguez</h3>
@@ -244,9 +244,7 @@
 
 
                 <p class="paragraph-font">"The personal training sessions helped me train for my first marathon. The
-                    expertise and
-                    motivation
-                    from the staff is unmatched."</p>
+                    expertise and motivation from the staff is unmatched."</p>
 
             </div>
 
@@ -261,35 +259,35 @@
 
 
 
-        <div> <!--  statistics container-->
+        <div class="stat-container text-center"> <!--  statistics container-->
 
 
-            <div><!--  first number and p-->
+            <div class="stat"><!--  first number and p-->
                 <h3>2500+</h3>
                 <p>Active Members</p>
             </div>
 
 
 
-            <div><!--  second number and p-->
+            <div class="stat"><!--  second number and p-->
                 <h3>15+</h3>
                 <p>Expert Trainers</p>
             </div>
 
 
-            <div><!--  first number and p-->
+            <div class="stat"><!--  first number and p-->
                 <h3>50+</h3>
                 <p>Group Classes</p>
             </div>
 
 
 
-            <div><!--  first number and p-->
+            <div class="stat"><!--  first number and p-->
                 <h3>24/7</h3>
                 <p>Access Hours</p>
             </div>
 
-
+            <div class="clear-fix"></div>
 
         </div>
 
@@ -300,31 +298,43 @@
 
 
 
-    <div> <!--  form + header and p container-->
+    <div class="ready-to-start-your-fitness-journey-container"> <!--  form + header and p container-->
 
 
 
-        <div> <!--  header and p-->
-            <h2>Ready to Start Your Fitness Journey?</h2>
-            <p>Join FitCore today and get access to premium facilities, expert guidance, and a community that
+        <div class="headers text-center"> <!--  header and p-->
+            <h2 class="header-font">Ready to Start Your Fitness Journey?</h2>
+            <p class="paragraph-font">Join FitCore today and get access to premium facilities, expert guidance, and a
+                community that
                 supports your goals. </p>
         </div>
 
 
 
-        <div> <!--  form-->
+        <div class="form-container header-font"> <!--  form-->
             <form>
-                <label for="first-name">First Name</label>
-                <input id="first-name" name="first-name" placeholder="Enter your first name" />
+                <div class="first-last-name-container">
+                    <label for="first-name">First Name</label>
+                    <br>
+                    <input class="form-element" id="first-name" name="first-name" placeholder="Enter your first name" />
+                </div>
 
 
-                <label for="last-name">Last Name</label>
-                <input id="last-name" name="last-name" placeholder="Enter your last name" />
 
+                <div class="first-last-name-container">
+                    <label for="last-name">Last Name</label>
+                    <br>
+                    <input class="form-element" id="last-name" name="last-name" placeholder="Enter your last name" />
+                </div>
+                <div class="clear-fix"></div>
 
-                <label for="email">Email Address</label>
-                <input id="email" name="email" placeholder="your.email@example.com" type="email" />
+                <div class="form-element">
 
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input id="email" name="email" placeholder="your.email@example.com" type="email" />
+
+                </div>
                 <label for="phone">Phone Number</label>
                 <input id="phone" name="phone" placeholder="(555 123-4567)" type="tel" />
 
