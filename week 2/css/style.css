@@ -35,16 +35,35 @@ body{
 .text-white{
     color: white;
 }
-.header-font {
+.text-black{
+    color: black;
+}
+.header-font-color{
     color: #101828;
+}
+.header-font {
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 
-.paragraph-font {
+.page-font {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.header-font-normal{
+    font-weight: 600;
+}
+
+.header-font-above-normal{
+    font-weight: 700;
+}
+.paragraph-font-color {
     color: #4A5665;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+
 
 
 h1 {
@@ -79,6 +98,7 @@ input , select, textarea, button{
     /* padding: 7px; */
     border-radius: 7px;
 }
+
 
 /* -------------------------------------------------------------------------- */
 
