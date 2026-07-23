@@ -68,7 +68,6 @@ body{
 
 h1 {
     font-size: 50px;
-    margin-block-end: 0;
     margin-block-start: 0;
 }
 
@@ -77,11 +76,22 @@ h1 {
 
 h2 {
     font-size: 30px;
+    margin-block-start: 0;
+
 }
 
 
+
+h3 {
+    /* font-size: 30px; */
+    margin-block-start: 0;
+
+}
+
 p {
-    font-size: 15px;
+    /* font-size: 20px; */
+    margin-block-start: 0;
+
 }
 
 img {
@@ -91,9 +101,7 @@ img {
 
 
 input , select, textarea, button{
-    margin-block-start: 5px;
 
-    margin-block-end: 15px;
 
     /* padding: 7px; */
     border-radius: 7px;
@@ -105,12 +113,11 @@ input , select, textarea, button{
 
 /* First two sections */
 
-.first-two-section-containers {
-    width: 60%;
-    margin-block-start: 20px;
+.page-container {
     
-
-    /* background-color: red; */
+    width:46%;
+    margin-block-start: 2%;
+    background-color: red;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -128,16 +135,20 @@ input , select, textarea, button{
 
 .hero {
     /* background-color: burlywood; */
-    margin-block-end: 10%;
+    background-color: #009966;
+    margin-block-end: 4%;
 }
 
 
 
 .hero-header {
-    width: 50%;
-    height: 100%;
-    margin-inline-end: 20px;
-    /* background-color: aqua; */
+    width:58%;
+}
+
+.hero-img {
+   
+
+width:33%
 
 }
 
@@ -147,43 +158,36 @@ input , select, textarea, button{
 .hero-img img {
 
     border-radius: 20px;
-    /* background-color: teal; */
+   
 
 }
 
 
-.hero-img {
-    width: 40%;
-    /* background-color: tomato; */
 
-
-
-}
 
 /* ------------------------------ */
 
 /* buttons */
 
  .btn {
-    padding-inline: 25px;
-    padding-block: 15px;
     border-radius: 10px;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 15px;
-    margin-inline-end: 15px;
-    /* border: 0; */
 
-    /* background-color: brown; */
+    font-size: 16px;
+
+    padding-inline: 5%;
+    padding-block: 3%;
 }
-
 
 
 
 .hero-header .learn-more {
     color: #263245;
-    background-color: transparent;
+    background-color: #fdfdfe;
 }
 
+.hero p{
+        font-size: 20px;
+}
 /* --------------------------------------------------------------------------------- */
 
 
@@ -193,68 +197,79 @@ input , select, textarea, button{
 
 /* Containers */
 
+.why-choose-us-container {
+        /* margin-block-end: 20%; */
+}
 
 .why-choose-us {
-    width: 80%;
-    margin-block-end: 50px;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
+    width:66%;
+    margin-block-end: 2%;
+}
+
+.why-choose-us p {
+      font-size: 20px;
 }
 
 
-
-
-.why-choose-us-container .cards-container {
+.cards-container {
     /* background-color: chartreuse; */
-    width: 80%;
-    margin-block-end: 50px;
     font-size: 11px;
+    background-color: #9810fa;
+    margin-block-end: 5%;
+
+
+    
 
 }
 
 
-.why-choose-us-container .card {
-    width: 20%;
-    padding: 30px;
+ .card {
     border-radius: 15px;
+    width: 25%;
     margin-inline-end: 3%;
-    height: 100%;
+    padding: 2%;
 
 }
 
 
 
-.premium-equipment {
+.card-1 {
     background-color: #dbeafe;
 }
 
 
-.expert-trainers {
+.card-2 {
     background-color: #d0fae5;
 }
 
-.flexible-hours {
+.card-3 {
     background-color: #f3e8ff;
+    
 }
 
-
+.why-choose-us .card p{
+    font-size: 9px;
+}
 
 
 
 .more-than-just-a-gym {
-    width: 100%
+            margin-block-end: 5%;
+
 }
 
-.headers-container {
-    width: 40%;
+.more-than-just-a-gym .headers-container {
     /* background-color: yellow; */
     font-size: 11px;
+    width:46%;
 }
 
 
 .header-paragraph-container {
     border-left: 5px black solid;
-    /* margin-inline-start: 10px; */
-    padding-inline-start: 50px;
+    padding-inline: 5%;
+
 }
 
 
@@ -278,10 +293,10 @@ input , select, textarea, button{
 
 /* ------------------------------ */
 /* individual elements */
-.premium-equipment p,
-.expert-trainers p,
-.flexible-hours p {
-    font-size: 89%;
+.card-1 p,
+.card-2 p,
+.card-3 p {
+    /* font-size: 89%; */
 }
 
 
@@ -334,20 +349,26 @@ input , select, textarea, button{
 
 
 .more-than-just-a-gym .img-container {
-    width: 50%;
+    width: 48%;
+    margin-inline-end: 4%;
     /* background-color: cornflowerblue; */
-    margin-inline-end: 60px;
 }
 
 
 .headers-container h2 {
-    margin-block-start: 0;
 
 
 }
 
-.headers-container p {
-    margin-block-end: 0;
+
+.headers-container h3 {
+    font-size: 18px;
+    margin-block-end: 1%;
+
+}
+
+ .more-than-just-a-gym .headers-container p {
+    font-size: 16px;
 }
 
 /* --------------------------------------------------------------------------------- */
@@ -357,40 +378,17 @@ input , select, textarea, button{
 /* containers */
 .what-our-members-say-container {
     background-color: #f9fafb;
-    margin-block-end: 50px;
 }
 
 
 .what-our-members-say-container .cards-container .img-container {
-    width: 20%;
-    margin-inline-start: 70px;
+    width: 30%;
 }
 
 .what-our-members-say-container .cards-container {
-    width: 80%;
-    /* background-color: #009966; */
-    margin-block-end: 50px;
 }
 
 .what-our-members-say-container .card {
-    width: 30%;
-    margin-inline-end: 2%;
-}
-
-
-.david-martinez {
-    background-color: #eff6ff;
-}
-
-
-.mike-chen {
-    background-color: #ecfdf5;
-}
-
-
-
-.james-rodriguez {
-    background-color: #faf5ff;
 }
 
 
@@ -398,27 +396,27 @@ input , select, textarea, button{
 
 
 
+.what-our-members-say-container .headers-container{
+    width:65%
+}
 
 .what-our-members-say-container .profile-header {
 
-    width: 80%;
-    /* background-color: slategrey; */
-    margin-block-start: 0;
 
 }
 
 
 .stat-container {
-    width: 80%;
     background-color: #f1f5f9;
-    border-radius: 10px
+    border-radius: 10px;
+    margin-block-end: 4%;
 }
 
 
 .stat-container .stat {
     /* background-color: red; */
-    width: 20%;
-    margin-inline-start: 5%;
+    margin-inline-start: 9%;
+    padding-block-start:3%
 }
 
 
@@ -436,31 +434,28 @@ input , select, textarea, button{
 
 /* Containers */
 .ready-to-start-your-fitness-journey-container {
-    width: 70%;
-    /* background-color: red; */
-    margin-block-end: 100px;
 }
 
-.ready-to-start-your-fitness-journey-container .headers {
-    width: 35%;
-    margin-block-end: 35px;
+.ready-to-start-your-fitness-journey-container .headers-container {
+    width: 56%;
+    margin-block-end: 4%;
 }
 
+.ready-to-start-your-fitness-journey-container .headers-container h2{
+    font-size: 27px;
+}
 .form-container {
     background-color: #f9fafb;
 
 }
 
 .first-last-name-container {
-    width: 40%;
 }
 
 
 
 
 .form-element-container{
-     margin-inline-start: 5%;
-    /* background-color: #009966; */
       
 }
 
@@ -471,8 +466,6 @@ input , select, textarea, button{
 
 
 .form-element-container input, .form-element-container textarea, .form-element-container select ,  .form-element-container button{
-     padding: 20px;
-      width: 80%;
 
       
 }
@@ -488,19 +481,15 @@ input , select, textarea, button{
 /* Conteiners */
 .footer{
     background-color:#101828;
-    padding-inline-start: 50px;
-    padding-block:50px;
 }
 
 .footer .section-1{
-    width: 40%;
    
 }
 
 
 
 .footer .section-2-and-3{
-    width: 20%;
    
 }
 
@@ -508,13 +497,11 @@ input , select, textarea, button{
 
 .footer .section-2 a{
     display: block;
-    margin-block-end: 15px;
 }
 
 
 
 .footer .section-3 h3{
     /* width: 20%; */
-    margin-block-end: 5px;
 }
 
