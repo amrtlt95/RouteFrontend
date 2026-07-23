@@ -107,19 +107,27 @@ input , select, textarea, button{
     border-radius: 7px;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* -------------------------------------------------------------------------- */
-
+.page-container{
+    margin-block-start: 7%;
+}
 
 /* First two sections */
 
-.page-container {
+.mini-page-container {
     
-    width:46%;
+    width:91%;
     margin-block-start: 2%;
-    background-color: red;
+    /* background-color: red; */
 }
 
+.mini-stats-container{
+    width:72%;
+}
 /* -------------------------------------------------------------------------- */
 
 
@@ -135,7 +143,7 @@ input , select, textarea, button{
 
 .hero {
     /* background-color: burlywood; */
-    background-color: #009966;
+    /* background-color: #009966; */
     margin-block-end: 4%;
 }
 
@@ -202,7 +210,7 @@ width:33%
 }
 
 .why-choose-us {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width:66%;
     margin-block-end: 2%;
 }
@@ -215,7 +223,7 @@ width:33%
 .cards-container {
     /* background-color: chartreuse; */
     font-size: 11px;
-    background-color: #9810fa;
+    /* background-color: #9810fa; */
     margin-block-end: 5%;
 
 
@@ -415,7 +423,7 @@ width:33%
 
 .stat-container .stat {
     /* background-color: red; */
-    margin-inline-start: 9%;
+    margin-inline-start: 7%;
     padding-block-start:3%
 }
 
@@ -434,28 +442,50 @@ width:33%
 
 /* Containers */
 .ready-to-start-your-fitness-journey-container {
+        background-color: #f9fafb;
+
+    margin-block-end: 10%;
 }
 
 .ready-to-start-your-fitness-journey-container .headers-container {
     width: 56%;
-    margin-block-end: 4%;
+    margin-block-end: 6%;
 }
 
 .ready-to-start-your-fitness-journey-container .headers-container h2{
     font-size: 27px;
 }
-.form-container {
-    background-color: #f9fafb;
 
+
+.form-container input, .form-container textarea, .form-container select, .form-container button{
+    /* padding-inline-end :80%; */
+    width: 80%;
+    padding-block:20px;
+        padding-inline-start: 4%;
 }
 
-.first-last-name-container {
+.first-last-name-container{
+    padding-inline-end:20%;
+    width:24%;
+    margin-inline-end: 3%;
 }
+
+
+.first-last-name-container input{
+    padding-inline-start: 10%;
+    padding-inline-end :70%;
+
+    
+}
+
+
+
 
 
 
 
 .form-element-container{
+    margin-block-end: 3%;
       
 }
 
@@ -479,13 +509,20 @@ width:33%
 
 /* footer */
 /* Conteiners */
-.footer{
+ .footer{
     background-color:#101828;
+    padding-block: 5%;
 }
 
 .footer .section-1{
-   
+   width:43%;
+   margin-inline-end: 3%;
 }
+
+
+
+
+
 
 
 
@@ -494,14 +531,27 @@ width:33%
 }
 
 
+.footer .section-2{
+        margin-inline-end: 5%;
+        width:10%
 
+}
 .footer .section-2 a{
     display: block;
+    margin-block-end: 10%;
 }
 
 
+
+.footer .section-3{
+        
+        width:19%;
+        margin-inline-end: 5%;
+
+}
 
 .footer .section-3 h3{
     /* width: 20%; */
 }
+
 
