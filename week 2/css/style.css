@@ -555,3 +555,46 @@ width:33%
 }
 
 
+.footer-p-text{
+    color:#99a1af;
+}
+
+.footer hr{
+    
+        color: #364153
+    
+}
+
+.footer .first-3-sections-container{
+    margin-block-end: 5%;
+}
+
+.footer .bottom-section{
+    margin-block-start: 5%;
+}
+
+.footer .section-2-bottom{
+    margin-inline-end: 5%;
+}
+
+
+.footer .section-2-bottom a{
+    padding-inline-end: 10px;
+}
+
+.footer .section-2 h2 , .footer .section-3 h2{
+font-weight: 400;
+font-size: 20px;
+}
+
+
+.footer .section-3 h3{
+font-weight: 300;
+font-size: 18px;
+}
+
+
+
+.footer .section-3 h3, .footer .section-3 span{
+margin-block-end: 5%;
+}
