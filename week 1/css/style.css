@@ -1,0 +1,44 @@
+.linkedin{
+    width:73px;
+    height:73px;
+
+    background-image: url("../images/black-icon-set-social-apps-260nw-2294107707.webp");
+
+    background-position: -37px -43px;
+
+
+
+    
+}
+
+/* equation is
+ 37 + (73+30) X index -1 */
+
+.facebook{
+    background-position: -449px -43px;
+}
+
+.instagram{
+    background-position: -140px -43px;
+}
+
+
+.github{
+    background-position: -346px -43px;
+}
+
+
+.instashop{
+    width:445px;
+    height:446px;
+    background-image: url("../images/logos.png");
+}
+
+.rushbrush{
+    background-position:  -446px 0   ;
+}
+
+
+.favelin{
+    background-position: -892px 0   ;
+}
