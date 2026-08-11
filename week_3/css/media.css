@@ -1,126 +1,21 @@
 body {
-    padding-top: 90px;
-
-    &,
-    * {
-
-
-        margin: 0;
-    }
-
-    * {
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        color: #333;
-    }
-
-    img {
-        width: 100%;
-        display: block;
-    }
-
-    .clear-fix {
-        clear: both;
-    }
-
-    .flex {
-        display: flex;
-
-    }
-
-    .container {
-        width: 98%;
-        margin: auto;
-    }
-
-    .font {
-        font-family: sans-serif;
-    }
-
-    .helicopter-icon {
-        width: 40px;
-        border-radius: 7px;
-        padding: 5px;
-    }
-
-    .floating-icon {
-        color: white;
-        padding: 10px;
-        border-radius: 15px;
-        font-size: 14px;
-    }
-
-
-    .black-font {
-        color: #333;
-    }
-
-    .purple-font {
-        color: #8e51ff;
-    }
-
-    .purple-bg {
-        background-color: #8e51ff;
-    }
-
-    .font-weight-700 {
-        font-weight: 700;
-
-    }
-
-    .margin-bottom-25px {
-        margin-bottom: 25px;
-    }
-
-    .margin-bottom-150px {
-        margin-bottom: 150px;
-    }
+   
 
     .navbar {
-        background-color: #F5F3FF;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        padding: 20px;
-        z-index: 1;
-
-
+        
         .container {
-            justify-content: space-between;
-            align-items: center;
 
-
-            .left-section {
-
-                span {
-                    font-size: 24px;
-                    margin: 10px;
-                }
-            }
 
             .right-section {
                 ul {
-                    list-style-type: none;
-                    justify-content: space-between;
+                  
 
                     a {
-                        text-decoration: none;
-                        /* color: black; */
-                        font-weight: 400;
-                        margin: 20px;
-
-                        &:hover {
-                            color: #7f22fe;
-                            text-decoration: underline;
-                            font-weight: 500;
-                        }
+       
                     }
                 }
 
-                @media screen and (max-width: 850px) {
-                    display: none;
+  
                 }
             }
 
