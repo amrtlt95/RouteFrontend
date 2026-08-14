@@ -1,0 +1,115 @@
+    :root {
+        --nav-anchor-color: #ff7a50;
+    }
+
+    body {
+        margin: 0;
+        padding-top: 150px;
+
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+
+            font-family: "Exo", sans-serif;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            width: clamp(220px, 98%, 1300px);
+
+
+            margin-inline: auto;
+            background-color: aqua;
+
+        }
+
+        .nav {
+            position: relative;
+
+
+            .container {
+                position: fixed;
+                z-index: 1;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                column-gap: 15%;
+                align-items: center;
+                justify-content: space-between;
+                border: 2px solid black;
+                border-radius: 15px;
+
+                padding-inline: 20px;
+                padding-block: 10px;
+            }
+
+            .logo {
+                font-weight: 800;
+                font-size: clamp(23px, 4vw, 30px);
+
+
+                span {
+                    span {
+                        color: #FF6900;
+
+                    }
+                }
+
+            }
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                gap: 20px;
+
+                i {
+                    font-size: 10px;
+
+                }
+
+                li {
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    & a:hover {
+                        color: var(--nav-anchor-color);
+                    }
+                }
+
+                @media screen and (max-width: 1280px) {
+                    display: none;
+                }
+            }
+
+            button {
+                background-color: #FFF085;
+                font-weight: 700;
+                font-size: 14px;
+                padding-inline: 15px;
+                padding-block: 10px;
+                border-radius: 15px;
+                border: 2px solid black;
+                /* align-self: end; */
+
+                @media screen and (max-width: 1280px) {
+                    display: none;
+                }
+            }
+
+
+        }
+    }
