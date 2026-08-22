@@ -1,3 +1,219 @@
-body{
-    background-color: aqua;
-}
+    @font-face {
+        font-family: "IBM Plex Sans Arabic";
+        src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf");
+
+        font-weight: 700;
+
+    }
+
+
+    @font-face {
+        font-family: "IBM Plex Sans Arabic";
+        src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-ExtraLight.ttf");
+        font-weight: 200;
+
+
+    }
+
+
+
+    @font-face {
+        font-family: "IBM Plex Sans Arabic";
+        src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf");
+        font-weight: 300;
+
+
+    }
+
+
+
+    @font-face {
+        font-family: "IBM Plex Sans Arabic";
+        src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf");
+        font-weight: 500;
+
+
+    }
+
+
+
+    @font-face {
+        font-family: "IBM Plex Sans Arabic";
+        src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf");
+        font-weight: 400;
+
+
+    }
+
+
+
+    @font-face {
+        font-family: "IBM Plex Sans Arabic";
+        src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-SemiBold.ttf");
+        font-weight: 600;
+
+
+    }
+
+    @font-face {
+        font-family: "IBM Plex Sans Arabic";
+        src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Thin.ttf");
+        font-weight: 100;
+
+
+    }
+
+    .container {
+        background-color: #F6F8FC;
+        border: 1px solid #F4F4F8;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    body {
+
+
+        margin: 0;
+        font-family: "IBM Plex Sans Arabic";
+
+        & *,
+        & *::before,
+        & *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        picture>img {
+            width: 100%;
+            display: block;
+        }
+
+        .grid-container {
+            display: grid;
+            max-width: 98%;
+            margin-inline: auto;
+            /* background-color: teal; */
+            padding: 10px;
+
+            .hero {
+                /* background-color: red; */
+
+                .upper-content {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    /* row-gap:50px; */
+                    gap: 10px;
+                    margin-bottom: 20px;
+
+                    picture {
+                        width: 5%;
+                        border: 5px solid #4036DD;
+                        background-color: #4036DD;
+                        border-radius: 20px;
+
+
+                        img {
+                            /* padding: 20px; */
+
+
+                        }
+                    }
+
+                    .headers {
+                        display: flex;
+                        flex-direction: column;
+
+                        h1 {
+                            color: #101828;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 32px;
+                        }
+
+                        span {
+                            color: #4a5565;
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .middle-section {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .icons {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 2px;
+
+                        .notification-icon {
+                            position: relative;
+                            padding: 10px;
+
+                            span {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                background-color: red;
+                                border-radius: 20px;
+                                padding: 5px;
+
+                            }
+                        }
+                    }
+
+                    picture,
+                    .notification-icon {
+                        background-color: white;
+                        max-width: 50px;
+                    }
+
+
+                }
+
+                picture.profile-picture {
+                    padding: 10px;
+                    border-radius: 10px;
+                    max-width: 70px;
+                    border: 1px solid #E5E7EB;
+
+                    img {
+                        border-radius: 35%;
+                    }
+                }
+
+                .bottom-section {
+                    display: flex;
+                    justify-content: center;
+                    /* align-items: baseline; */
+                    background-color: #F9FAFB;
+                    padding: 10px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                    flex-direction: row;
+                    gap: 5px;
+
+
+
+                    .online-icon {
+                        background-color: #6EE09B;
+                        width: 15px;
+                        border-radius: 10px;
+                    }
+
+                    span {
+                        color: #008236;
+                    }
+                }
+
+            }
+        }
+    }
