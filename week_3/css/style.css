@@ -1,5 +1,8 @@
 body {
     padding-top: 90px;
+    font-family: sans-serif;
+    color: #333;
+
 
     &,
     * {
@@ -11,8 +14,6 @@ body {
     * {
         padding: 0;
         box-sizing: border-box;
-        font-family: sans-serif;
-        color: #333;
     }
 
     img {
@@ -52,8 +53,8 @@ body {
     }
 
 
-    .black-font {
-        color: #333;
+    h2 {
+        font-size: 36px;
     }
 
     .purple-font {
@@ -107,7 +108,7 @@ body {
 
                     a {
                         text-decoration: none;
-                        /* color: black; */
+                        color: inherit;
                         font-weight: 400;
                         margin: 20px;
 
@@ -137,6 +138,11 @@ body {
             justify-content: space-between;
             /* padding: 50px; */
             column-gap: 50px;
+
+            @media screen and (max-width: 850px) {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
 
             .left-section {
                 position: relative;
@@ -260,6 +266,34 @@ body {
                             background-color: white;
                             border: 1px solid #D1D5DC;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .how-we-compare-section {
+        .header-section {
+            background-color: #F7F5FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+
+            &>span {
+                font-size: 20px;
+                padding-block: 50px;
+            }
+        }
+
+        table {
+            background-color: white;
+
+            thead {
+                th {
+                    &:nth-child(3) {
+                        color: #8e51ff;
                     }
                 }
             }
