@@ -30,6 +30,14 @@ body {
 
     }
 
+    .inline-block {
+        display: inline-block;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
     .container {
         width: 98%;
         margin: auto;
@@ -63,6 +71,10 @@ body {
 
     .purple-bg {
         background-color: #8e51ff;
+    }
+
+    .our-product-bg {
+        background-color: #EDE9FE;
     }
 
     .font-weight-700 {
@@ -133,6 +145,7 @@ body {
 
     .hero-section {
         margin-top: 100px;
+        margin-bottom: 50px;
 
         .container {
             justify-content: space-between;
@@ -273,7 +286,11 @@ body {
     }
 
     .how-we-compare-section {
+        background-color: #F7F5FF;
+        margin-bottom: 80px;
+
         .header-section {
+
             background-color: #F7F5FF;
             display: flex;
             justify-content: center;
@@ -287,14 +304,170 @@ body {
             }
         }
 
-        table {
-            background-color: white;
+        .table-section {
+            margin-bottom: 30px;
+            border: 1px solid #D1D5DC;
+            border-radius: 50px;
 
-            thead {
-                th {
-                    &:nth-child(3) {
-                        color: #8e51ff;
+            table {
+                background-color: white;
+                border-collapse: collapse;
+
+                * {
+                    /* text-align: start; */
+                    text-align: center;
+                }
+
+                thead {
+                    th {
+                        padding: 16px;
+
+                        &:nth-child(2) {
+                            & span:nth-child(3) {
+                                color: #8e51ff;
+                                font-size: 16px;
+                            }
+                        }
+
+                        &:not(:nth-child(2)) {
+                            &>span:nth-child(3) {
+                                color: #8A909D;
+                                font-weight: 700;
+                                font-size: 16px;
+                            }
+                        }
                     }
+
+
+
+                }
+
+                tbody {
+                    tr {
+
+                        border-block: 1px solid #D1D5DC;
+
+
+                        td {
+                            padding: 16px;
+
+
+                            figure {
+
+                                max-width: 20px;
+                            }
+
+                            .our-product {
+                                width: fit-content;
+                                padding: 10px;
+                                border-radius: 10px;
+                                color: white;
+                                gap: 5px;
+                                font-weight: 600;
+                                text-align: center;
+                                margin: auto;
+
+
+
+
+                            }
+
+                            &:last-child {
+                                font-size: 16px;
+                                font-weight: 400;
+                            }
+
+                            &:first-child {
+                                display: flex;
+                                gap: 20px;
+                                width: 25vw;
+
+                            }
+
+                            &:not(:first-child) {
+                                width: 20vw;
+                            }
+                        }
+
+
+
+
+
+                    }
+
+                }
+
+                tfoot {
+
+
+                    .rating {
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .stars-container {
+                            display: flex;
+                            flex-direction: row;
+
+                        }
+
+                        &:last-child {
+
+                            font-size: 18px;
+
+                        }
+                    }
+
+                    td {
+                        padding: 24px;
+
+                        figure {
+
+                            max-width: 20px;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .winner-section {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            margin-inline: auto;
+            border-radius: 10px;
+
+            figure {
+                width: 25px;
+            }
+
+            .header {
+
+                color: #57C47F;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    }
+
+
+    .what-our-customers-say-section {
+        .rating-section-container {
+            background-color: tomato;
+
+            .rating {
+                display: flex;
+
+                figure {
+                    width: 20px;
                 }
             }
         }
