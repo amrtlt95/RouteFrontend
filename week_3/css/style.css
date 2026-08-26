@@ -30,6 +30,13 @@ body {
 
     }
 
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .justify-content-space-between{
+        justify-content: space-between;
+    }
     .inline-block {
         display: inline-block;
     }
@@ -460,6 +467,7 @@ body {
 
 
     .what-our-customers-say-section {
+
         .rating-section-container {
             background-color: tomato;
 
@@ -468,6 +476,15 @@ body {
 
                 figure {
                     width: 20px;
+                }
+            }
+        }
+        .reviews{
+            .review{
+                .profile{
+                    figure.profile-image{
+                        max-width: 56px;
+                    }
                 }
             }
         }
