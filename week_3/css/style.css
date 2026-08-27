@@ -24,7 +24,7 @@ body {
     }
 
     img {
-        width: 100%;
+        max-width: 100%;
         display: block;
     }
 
@@ -62,7 +62,7 @@ body {
     }
 
     .container {
-        width: 98%;
+        max-width: 1280px;
         margin: auto;
     }
 
@@ -538,6 +538,7 @@ body {
 
                 @media screen and (max-width: 850px) {
                     position: static;
+                    margin:auto;
                 }
 
                 &>:first-child {
@@ -757,10 +758,34 @@ body {
                     border: 1px solid var(--gray-border-color);
                     border-radius: 15px;
                     padding: 20px;
+                    position: relative;
 
-                    &>span:first-child{
-                        background-color: aqua;
+                    &>span:first-child {
+                        color: white;
+               padding: 5px;
+                        border-radius: 15px;
+                        position: absolute;
+                        top: 32px;
+                        left: 20px;
+
+                        &.card-1-bg {
+                            background-color: #00bba7;
+                        }
+
+                        &.card-2-bg {
+                            background-color: #00C950;
+                        }
+
+                        &.card-3-bg {
+                            background-color: #00B8DB;
+                        }
+
+                        &.card-4-bg {
+                            background-color: #FF6900;
+                        }
                     }
+
+
 
                 }
             }
