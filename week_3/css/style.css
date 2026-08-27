@@ -1,5 +1,8 @@
 :root {
     --primary-color: #8e51ff;
+    --red-text: #e55c00;
+    --light-sections-background: #F7F5FF;
+    --gray-border-color: #E5E7EB;
 }
 
 body {
@@ -86,11 +89,15 @@ body {
     }
 
     .purple-font {
-        color: #8e51ff;
+        color: var(--primary-color);
     }
 
     .purple-bg {
-        background-color: #8e51ff;
+        background-color: var(--primary-color);
+    }
+
+    .red-text {
+        color: var(--red-text)
     }
 
     .our-product-bg {
@@ -287,7 +294,7 @@ body {
                         }
 
                         &:nth-child(1) {
-                            background-color: #8E51FF;
+                            background-color: var(--primary-color);
 
                             span {
                                 color: white;
@@ -306,12 +313,12 @@ body {
     }
 
     .how-we-compare-section {
-        background-color: #F7F5FF;
+        background-color: var(--light-sections-background);
         margin-bottom: 80px;
 
         .header-section {
 
-            background-color: #F7F5FF;
+            background-color: var(--light-sections-background);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -344,7 +351,7 @@ body {
 
                         &:nth-child(2) {
                             & span:nth-child(3) {
-                                color: #8e51ff;
+                                color: var(--primary-color);
                                 font-size: 16px;
                             }
                         }
@@ -367,6 +374,12 @@ body {
 
                         border-block: 1px solid #D1D5DC;
 
+                        &:last-child {
+                            td:not(:first-child) {
+                                font-size: 24px;
+
+                            }
+                        }
 
                         td {
                             padding: 16px;
@@ -406,6 +419,19 @@ body {
 
                             &:not(:first-child) {
                                 width: 20vw;
+                            }
+
+
+
+                            & .x-mark-red-text {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 5px;
+
+                                picture {
+                                    width: 20px;
+                                }
                             }
                         }
 
@@ -480,14 +506,19 @@ body {
 
 
     .what-our-customers-say-section {
+        margin-bottom: 100px;
+
         .header {
             margin-block-end: 50px;
         }
 
         .inner-section {
-            position: relative;
+            /* position: relative; */
             gap: 50px;
 
+            @media screen and (max-width: 850px) {
+                flex-direction: column;
+            }
 
             .rating-section-container,
             .reviews>.review {
@@ -499,10 +530,15 @@ body {
 
             .rating-section-container {
                 position: sticky;
+                /* top: 100px; */
+                top: 100px;
+                bottom: 0;
+                align-self: flex-start;
 
-                left: 0;
-                top: 0;
-                
+
+                @media screen and (max-width: 850px) {
+                    position: static;
+                }
 
                 &>:first-child {
                     font-size: 60px;
@@ -524,7 +560,7 @@ body {
                     gap: 10px;
 
                     .whole-bar {
-                        background-color: #E5E7EB;
+                        background-color: var(--gray-border-color);
                         width: 215px;
                         height: 12px;
                         margin-inline: auto;
@@ -532,7 +568,7 @@ body {
                         border-radius: 5px;
                         overflow: hidden;
 
-                        /* background-color: #E5E7EB; */
+
                         .yellow-rating-bar {
                             background-color: #F0B100;
                             height: 12px;
@@ -690,5 +726,45 @@ body {
             }
         }
 
+    }
+
+
+    .complete-your-setup-section {
+        background-color: var(--light-sections-background);
+
+        .header {
+            margin-bottom: 64px;
+            text-align: center;
+
+            h2 {
+                font-weight: 700;
+            }
+
+            &>span:last-child {
+                font-size: 20px;
+            }
+        }
+
+        .cards {
+            display: flex;
+
+            .card {
+                max-width: 25%;
+                padding: 20px;
+
+                .inner {
+                    background-color: white;
+                    border: 1px solid var(--gray-border-color);
+                    border-radius: 15px;
+                    padding: 20px;
+
+                    &>span:first-child{
+                        background-color: aqua;
+                    }
+
+                }
+            }
+
+        }
     }
 }
