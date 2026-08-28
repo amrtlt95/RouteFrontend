@@ -63,6 +63,7 @@ body {
 
     .container {
         max-width: 1280px;
+        padding-inline: 24px;
         margin: auto;
     }
 
@@ -538,7 +539,7 @@ body {
 
                 @media screen and (max-width: 850px) {
                     position: static;
-                    margin:auto;
+                    margin: auto;
                 }
 
                 &>:first-child {
@@ -732,6 +733,11 @@ body {
 
     .complete-your-setup-section {
         background-color: var(--light-sections-background);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-block: 100px;
 
         .header {
             margin-bottom: 64px;
@@ -749,9 +755,21 @@ body {
         .cards {
             display: flex;
 
+            @media screen and (max-width: 850px) {
+                flex-direction: column;
+                /* justify-content: center; */
+                align-items: center;
+            }
+
             .card {
                 max-width: 25%;
                 padding: 20px;
+
+
+                @media screen and (max-width: 850px) {
+                    max-width: 35ch;
+
+                }
 
                 .inner {
                     background-color: white;
@@ -762,11 +780,12 @@ body {
 
                     &>span:first-child {
                         color: white;
-               padding: 5px;
+                        padding: 5px;
                         border-radius: 15px;
                         position: absolute;
                         top: 32px;
                         left: 20px;
+                        z-index: 5000;
 
                         &.card-1-bg {
                             background-color: #00bba7;
@@ -783,13 +802,93 @@ body {
                         &.card-4-bg {
                             background-color: #FF6900;
                         }
+
                     }
+
+                    figure {
+                        margin-bottom: 24px;
+                        transition: 0.5s all;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    h3 {
+                        font-weight: 700;
+                        font-size: 20px;
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        margin-bottom: 16px;
+                        max-width: 35ch;
+                    }
+
+                    .bottom-section {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        span {
+                            font-weight: 700;
+                            font-size: 24px;
+                        }
+
+                        button {
+                            background-color: var(--primary-color);
+                            color: white;
+                            padding: 10px;
+                            border-radius: 20px;
+                            font-size: 16px;
+                        }
+                    }
+
 
 
 
                 }
             }
 
+        }
+
+        button {
+            font-weight: 600;
+            font-size: 16px;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 20px;
+            transition: all 0.5s;
+            border-radius: 30px;
+
+            &:hover {
+                color: white;
+                background-color: var(--primary-color);
+            }
+
+        }
+    }
+
+
+    .footer{
+        background-color: #101828;
+        padding-block: 50px;
+        .container{
+            .upper-section{
+                .dji-section{
+                    .header{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        column-gap: 10px;
+                        h3{
+                            font-weight: 700;
+                            color:white;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
