@@ -334,16 +334,33 @@ body {
 
         .table-section {
             margin-bottom: 30px;
+
             border: 1px solid #D1D5DC;
-            border-radius: 50px;
+            border-radius: 16px;
+            background-color: white;
+            min-width: 690px;
+
+            &.container {
+                /* padding: 0; */
+            }
+
+            /* padding-block: 20px; */
+            &,
+            &>table {}
 
             table {
-                background-color: white;
+
                 border-collapse: collapse;
+                /* width: 100%; */
+                /* border: 1px solid #D1D5DC; */
+
+                /* border-collapse: separate;
+                border-spacing: 0;
+                overflow: hidden; */
 
                 * {
                     /* text-align: start; */
-                    text-align: center;
+                    /* text-align: center; */
                 }
 
                 thead {
@@ -384,7 +401,7 @@ body {
 
                         td {
                             padding: 16px;
-
+                            text-align: center;
 
                             figure {
 
@@ -414,7 +431,7 @@ body {
                             &:first-child {
                                 display: flex;
                                 gap: 20px;
-                                width: 25vw;
+                                width: 20vw;
 
                             }
 
@@ -870,22 +887,45 @@ body {
     }
 
 
-    .footer{
+    .footer {
         background-color: #101828;
         padding-block: 50px;
-        .container{
-            .upper-section{
-                .dji-section{
-                    .header{
+
+        .container {
+            .upper-section {
+                .dji-section {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    .header {
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
                         column-gap: 10px;
-                        h3{
+
+                        h3 {
                             font-weight: 700;
-                            color:white;
+                            color: white;
                             font-size: 24px;
                         }
+
+
+                    }
+
+                    .paragraph {
+
+                        p {
+                            max-width: 33ch;
+                            color: white;
+                        }
+                    }
+                    .social-icons{
+                        display: flex;
+
+                        &>div{
+                            max-width: 40px;
+                        }
+
                     }
                 }
             }
