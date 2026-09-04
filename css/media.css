@@ -1,0 +1,165 @@
+ @media screen and (min-width: 1280px) {
+
+
+     body {
+
+         .container {
+             max-width: 1280px;
+         }
+
+
+
+
+         .hero-section {
+
+
+             .nav {
+
+
+
+                 .container {
+
+
+
+                     /* #mobile-menu {
+                        display: inline; */
+
+                 }
+
+
+                 /* .logo {
+             
+
+                    span {
+
+
+                        span {
+                      
+                        }
+                    }
+                } */
+
+
+                 .mobile-menu-icon {
+                     display: none;
+                 }
+
+                 .mobile-menu-container {
+
+
+                     &:has(#mobile-menu:target) {
+
+
+                         .desktop {}
+                     }
+
+                     #mobile-menu {
+
+                         &:target {
+
+
+                             .headers {
+
+
+                                 h2 {}
+
+                                 .exit-icon {
+
+
+                                     a {
+
+
+                                         &:hover {}
+                                     }
+                                 }
+
+                             }
+
+                             .nav-links {
+                                 ul {
+
+
+                                     li {}
+                                 }
+                             }
+
+                             .btn {
+
+                                 button {}
+                             }
+                         }
+
+                     }
+                 }
+
+             }
+         }
+
+         &>.container {
+
+
+             .header-section {
+
+
+                 >span {}
+
+                 h1 {
+
+
+                     &>span:first-child {}
+
+                     &>span:last-child {}
+                 }
+
+                 p {}
+
+                 .btns {
+
+
+                     .button-container {}
+
+                     .start-reading-btn {}
+
+                     .watch-intro-btn {}
+                 }
+             }
+
+             .container {
+
+                 .right-section {
+
+
+                     &:hover {}
+
+                     .section-content {
+                         figure {
+
+
+                             img {}
+
+                         }
+
+                         span {}
+                     }
+                 }
+
+             }
+
+         }
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }

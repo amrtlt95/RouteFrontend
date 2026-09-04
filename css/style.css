@@ -26,22 +26,33 @@ body {
         outline: inherit;
     }
 
+    img {
+        width: 100%;
+
+        display: block;
+    }
+
     .container {
         width: 95%;
         margin-inline: auto;
 
-        @media screen and (min-width: 1280px) {
+        /* @media screen and (min-width: 1280px) {
             & {
                 max-width: 1280px;
             }
-        }
+        } */
     }
 
 
+
+
     .hero-section {
+        border: 2px solid black;
+
         background-color: #FFF085;
         padding-top: 144px;
         position: relative;
+        padding-bottom: 64px;
 
         .nav {
             position: fixed;
@@ -266,16 +277,39 @@ body {
             }
 
             .container {
+
                 .right-section {
+                    position: relative;
+                    border: 4px solid black;
+                    box-shadow: 6px 6px black;
+
+                    &:hover {
+                        transform: translateX(-5px) translateY(-5px);
+                    }
+
                     .section-content {
-                        picture {
+                        figure {
                             height: 384px;
 
-
                             img {
-
                                 object-fit: cover;
+                                height: 100%;
                             }
+
+                        }
+
+                        span {
+                            background-color: #FB2C36;
+                            padding-inline: 16px;
+                            padding-block: 8px;
+                            color: white;
+                            border: 2px solid black;
+                            box-shadow: 3px 3px #000;
+                            display: inline-block;
+                            transform: rotate(20deg) translateY(-15px);
+                            position: absolute;
+                            top: 0;
+                            right: 0;
                         }
                     }
                 }
