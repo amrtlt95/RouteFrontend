@@ -1,165 +1,115 @@
- @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    body {
 
 
-     body {
-
-         .container {
-             max-width: 1280px;
-         }
-
-
-
-
-         .hero-section {
-
-
-             .nav {
+        .container {
+            max-width: 1280px;
+            /* @media screen and (min-width: 1280px) {
+            & {
+                max-width: 1280px;
+            }
+        } */
+        }
 
 
 
-                 .container {
+
+        .hero-section {
+
+
+            .nav {
+
+                .container {
 
 
 
-                     /* #mobile-menu {
-                        display: inline; */
-
-                 }
-
-
-                 /* .logo {
-             
-
-                    span {
-
+                    .logo {
 
                         span {
-                      
+
+
+                            span {}
                         }
                     }
-                } */
 
 
-                 .mobile-menu-icon {
-                     display: none;
-                 }
+                    .mobile-menu-icon {
+                        display: none;
+                    }
 
-                 .mobile-menu-container {
+                    .mobile-menu-container {}
 
 
-                     &:has(#mobile-menu:target) {
 
+                    .nav-links-desktop {
+                        display: flex;
+                    }
 
-                         .desktop {}
-                     }
+                    .nav-btn-desktop {
+                        display: block;
+                    }
+                }
 
-                     #mobile-menu {
 
-                         &:target {
 
 
-                             .headers {
 
 
-                                 h2 {}
 
-                                 .exit-icon {
 
 
-                                     a {
+            }
 
+            &>.container {
+                flex-direction: row;
 
-                                         &:hover {}
-                                     }
-                                 }
+                .header-section {
 
-                             }
 
-                             .nav-links {
-                                 ul {
+                    >span {}
 
+                    h1 {
 
-                                     li {}
-                                 }
-                             }
+                        &>span:first-child {}
 
-                             .btn {
+                        &>span:last-child {}
+                    }
 
-                                 button {}
-                             }
-                         }
+                    p {}
 
-                     }
-                 }
+                    .btns {
 
-             }
-         }
+                        .button-container {}
 
-         &>.container {
+                        .start-reading-btn {}
 
+                        .watch-intro-btn {}
+                    }
+                }
 
-             .header-section {
+                .container {
 
+                    .right-section {
 
-                 >span {}
+                        &:hover {}
 
-                 h1 {
+                        .section-content {
+                            figure {
 
+                                img {
+                                }
 
-                     &>span:first-child {}
+                            }
 
-                     &>span:last-child {}
-                 }
+                            span {}
+                        }
+                    }
 
-                 p {}
+                }
 
-                 .btns {
+            }
+        }
+    }
 
 
-                     .button-container {}
-
-                     .start-reading-btn {}
-
-                     .watch-intro-btn {}
-                 }
-             }
-
-             .container {
-
-                 .right-section {
-
-
-                     &:hover {}
-
-                     .section-content {
-                         figure {
-
-
-                             img {}
-
-                         }
-
-                         span {}
-                     }
-                 }
-
-             }
-
-         }
-     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- }
+}
