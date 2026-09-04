@@ -4,15 +4,7 @@
 
         .container {
             max-width: 1280px;
-            /* @media screen and (min-width: 1280px) {
-            & {
-                max-width: 1280px;
-            }
-        } */
         }
-
-
-
 
         .hero-section {
 
@@ -20,26 +12,9 @@
             .nav {
 
                 .container {
-
-
-
-                    .logo {
-
-                        span {
-
-
-                            span {}
-                        }
-                    }
-
-
                     .mobile-menu-icon {
                         display: none;
                     }
-
-                    .mobile-menu-container {}
-
-
 
                     .nav-links-desktop {
                         display: flex;
@@ -49,68 +24,30 @@
                         display: block;
                     }
                 }
-
-
-
-
-
-
-
-
-
             }
 
-            &>.container {
-                flex-direction: row;
-                flex-wrap: nowrap;
 
-                .header-section {
-
-
-                    >span {}
-
-                    h1 {
-
-                        &>span:first-child {}
-
-                        &>span:last-child {}
-                    }
-
-                    p {}
-
-                    .btns {
-
-                        .button-container {}
-
-                        .start-reading-btn {}
-
-                        .watch-intro-btn {}
-                    }
-                }
-
-                .container {
-                    align-self: center;
-
-                    .right-section {
-
-                        &:hover {}
-
-                        .section-content {
-                            figure {
-
-                                img {}
-
-                            }
-
-                            span {}
-                        }
-                    }
-
-                }
-
-            }
         }
     }
+}
 
+
+
+@media screen and (min-width:1024px) {
+
+    .hero-section {
+
+        &>.container {
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+
+            .container {
+                align-self: center;
+
+            }
+
+        }
+    }
 
 }
