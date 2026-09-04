@@ -26,27 +26,41 @@
                 }
             }
 
+            &>.container {
+                flex-direction: row;
+                flex-wrap: nowrap;
 
+
+                .container {
+                    align-self: center;
+
+                }
+
+            }
         }
     }
+
+
 }
-
-
 
 @media screen and (min-width:1024px) {
 
-    .hero-section {
+    body {
 
-        &>.container {
-            flex-direction: row;
-            flex-wrap: nowrap;
+        .hero-section {
 
 
-            .container {
-                align-self: center;
+            &>.container {
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+
+                .container {
+                    align-self: center;
+
+                }
 
             }
-
         }
     }
 
