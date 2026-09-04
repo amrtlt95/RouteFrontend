@@ -62,6 +62,7 @@
 
             &>.container {
                 flex-direction: row;
+                flex-wrap: nowrap;
 
                 .header-section {
 
@@ -88,6 +89,7 @@
                 }
 
                 .container {
+                    align-self: center;
 
                     .right-section {
 
@@ -96,8 +98,7 @@
                         .section-content {
                             figure {
 
-                                img {
-                                }
+                                img {}
 
                             }
 

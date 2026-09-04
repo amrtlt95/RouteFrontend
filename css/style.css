@@ -64,7 +64,6 @@ body {
             background-color: #FFD15B;
 
             font-weight: 700;
-
             color: black;
             border: 5px solid black;
             box-shadow: black 2px 2px;
@@ -280,41 +279,55 @@ body {
                 }
 
                 p {
-                    max-width: 35ch;
                     font-weight: 500;
                     font-size: 24px;
                     line-height: 32px;
                     background-color: white;
                     border: 1px solid black;
                     box-shadow: 5px 5px black;
+                    padding: 16px
                 }
 
                 .btns {
                     display: flex;
                     gap: 10px;
 
-                    .button-container {
-                        width: fit-content;
-                        padding-inline: 32px;
-                        padding-block: 16px;
-                        font-weight: 700;
-                        font-size: 20px;
-                        line-height: 28px;
-
-                    }
-
-                    .start-reading-btn {
-
+                    .button-parent {
                         background-color: black;
-                        color: white;
 
+                        .button-container {
+                            width: fit-content;
+                            padding-inline: 32px;
+                            padding-block: 16px;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 28px;
+                            cursor: pointer;
+                            transform: translateY(-5px) translateX(-5px);
+                            transition: transform 0.2s;
+
+                            &:hover {
+                                transform: translateY(0) translateX(0);
+
+                            }
+
+                        }
+
+                        .start-reading-btn {
+
+                            background-color: black;
+                            color: white;
+
+
+                        }
+
+                        .watch-intro-btn {
+                            background-color: white;
+                            color: black;
+
+                        }
                     }
 
-                    .watch-intro-btn {
-                        background-color: white;
-                        color: black;
-
-                    }
                 }
             }
 
