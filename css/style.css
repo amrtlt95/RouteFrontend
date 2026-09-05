@@ -84,6 +84,38 @@ body {
         width: fit-content;
     }
 
+
+    .button-parent {
+        background-color: black;
+        width: fit-content;
+
+        .button-container {
+            width: fit-content;
+            padding-inline: 32px;
+            padding-block: 16px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            cursor: pointer;
+            transform: translateY(-5px) translateX(-5px);
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: translateY(0) translateX(0);
+
+            }
+
+        }
+
+        .black-btn {
+
+            background-color: black;
+            color: white;
+
+
+        }
+    }
+
     .hero-section {
         border: 2px solid black;
 
@@ -293,31 +325,19 @@ body {
                     gap: 10px;
 
                     .button-parent {
-                        background-color: black;
+                       
 
                         .button-container {
-                            width: fit-content;
-                            padding-inline: 32px;
-                            padding-block: 16px;
-                            font-weight: 700;
-                            font-size: 20px;
-                            line-height: 28px;
-                            cursor: pointer;
-                            transform: translateY(-5px) translateX(-5px);
-                            transition: transform 0.2s;
+                      
 
                             &:hover {
-                                transform: translateY(0) translateX(0);
+                             
 
                             }
 
                         }
 
-                        .start-reading-btn {
-
-                            background-color: black;
-                            color: white;
-
+                        .black-btn { 
 
                         }
 
@@ -407,6 +427,26 @@ body {
                 gap: 32px;
 
                 .card {
+                    --card-header-font: #000;
+                    transition: 0.3s all;
+
+                    &:has(.first-icon):hover h3 {
+                        --card-header-font: var(--redish-color);
+                    }
+
+                    &:has(.second-icon):hover h3 {
+                        --card-header-font: var(--bluesh-color);
+                    }
+
+                    &:has(.third-icon):hover h3 {
+                        --card-header-font: var(--purplish-color);
+                    }
+
+
+                    &:hover {
+                        transform: translate(-2px, -2px);
+                    }
+
                     .inner {
                         display: flex;
                         flex-direction: column;
@@ -508,6 +548,7 @@ body {
                             font-weight: 700;
                             font-size: 24px;
                             line-height: 32px;
+                            color: var(--card-header-font);
 
                         }
 
@@ -521,11 +562,32 @@ body {
                         .bottom-section {
                             display: flex;
                             flex-direction: row;
-                            justify-content: space-evenly;
+                            /* justify-content: space-evenly; */
+                            /* justify-content: space-evenly; */
+                            align-items: center;
+
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 20px;
+
+
+                            .left-section {
+                                width: 50%;
+                            }
+
+                            .right-section {
+                                .likes {
+                                    color: red;
+                                }
+                            }
                         }
 
 
                     }
+                }
+
+                .button-parent{
+                    margin-inline: auto;
                 }
             }
         }
