@@ -405,12 +405,11 @@ body {
         .container {
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            gap: 48px;
 
             .header {
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 48px;
 
                 h2 {
                     font-weight: 900;
@@ -591,13 +590,23 @@ body {
             }
 
             .right-section {
-                .trending-now-section {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                .trending-now-section,
+                .categories-section {
                     h2 {
                         font-weight: 900;
                         font-size: 30px;
                         line-height: 36px;
                         margin-bottom: 24px;
                     }
+                }
+
+
+                .trending-now-section {
+
 
                     .content-wrapper {
                         display: flex;
@@ -655,6 +664,85 @@ body {
                                     font-size: 0.875rem;
                                     color: #525252;
                                 }
+                            }
+                        }
+                    }
+                }
+
+                .categories-section {
+                    display: flex;
+                    flex-direction: column;
+
+                    .cards {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .card {
+                            transition: 0.15s all;
+
+                            &:hover {
+                                transform: translate(-2px, -2px);
+                                box-shadow: 6px 6px #000;
+                            }
+
+                            &:first-child {
+                                background-color: oklch(97.3% .071 103.193);
+
+                                &:hover {
+                                    background-color: oklch(90.5% .182 98.111);
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                background-color: oklch(96.2% .044 156.743);
+
+                                &:hover {
+                                    background-color: oklch(87.1% .15 154.449);
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                background-color: oklch(94.8% .028 342.258);
+
+                                &:hover {
+                                    background-color: oklch(82.3% .12 346.018);
+
+                                }
+                            }
+
+                            &:nth-child(4) {
+                                background-color: oklch(93.2% .032 255.585);
+
+                                &:hover {
+                                    background-color: oklch(80.9% .105 251.813);
+                                }
+                            }
+
+                            &:last-child {
+                                background-color: oklch(94.6% .033 307.174);
+
+                                &:hover {
+                                    background-color: oklch(82.7% .119 306.383);
+                                }
+                            }
+
+
+                            .inner {
+                                border: 2px solid #000;
+                                padding-inline: 16px;
+                                padding-block: 12px;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 24px;
+                                /* 
+                                &:nth-child(even) {
+                                    background-color: red;
+                                } */
+
+                                /* &:first-child {
+                                    background-color: #FFDF20;
+                                } */
                             }
                         }
                     }
