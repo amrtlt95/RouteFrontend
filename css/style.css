@@ -1,3 +1,14 @@
+:root {
+    --redish-color: #FB2C36;
+    --bluesh-color: #2B7FFF;
+    --purplish-color: #AD46FF;
+    --first-child-yellowish-color: oklch(97.3% .071 103.193);
+    --second-child-greenish-color: oklch(96.2% .044 156.743);
+    --third-child-pinkish-color: oklch(94.8% .028 342.258);
+
+
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -120,6 +131,38 @@ body {
         padding: 32px;
         border: 4px solid black;
         box-shadow: 6px 6px black;
+    }
+
+    .latest-articles-img-floating-box {
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+        border: 2px solid black;
+        padding-inline: 8px;
+        padding-block: 4px;
+        width: fit-content;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+
+        &.first-icon {
+            background-color: var(--redish-color);
+            transform: rotate(10deg);
+
+
+        }
+
+
+        &.second-icon {
+            background-color: var(--bluesh-color);
+            transform: rotate(-10deg);
+        }
+
+        &.third-icon {
+            background-color: var(--purplish-color);
+            transform: rotate(45deg);
+        }
     }
 
     .hero-section {
@@ -398,9 +441,7 @@ body {
 
     .latest-articles-section {
         padding-block: 80px;
-        --redish-color: #FB2C36;
-        --bluesh-color: #2B7FFF;
-        --purplish-color: #AD46FF;
+
 
         .container {
             display: flex;
@@ -468,37 +509,7 @@ body {
                                     }
                                 }
 
-                                .latest-articles-img-floating-box {
-                                    color: white;
-                                    font-weight: 700;
-                                    font-size: 12px;
-                                    border: 2px solid black;
-                                    padding-inline: 8px;
-                                    padding-block: 4px;
-                                    width: fit-content;
-                                    position: absolute;
-                                    top: 0;
-                                    right: 0;
 
-
-                                    &.first-icon {
-                                        background-color: var(--redish-color);
-                                        transform: rotate(10deg);
-
-
-                                    }
-
-
-                                    &.second-icon {
-                                        background-color: var(--bluesh-color);
-                                        transform: rotate(-10deg);
-                                    }
-
-                                    &.third-icon {
-                                        background-color: var(--purplish-color);
-                                        transform: rotate(45deg);
-                                    }
-                                }
 
 
 
@@ -697,7 +708,7 @@ body {
                             }
 
                             &:first-child {
-                                background-color: oklch(97.3% .071 103.193);
+                                background-color: var(--first-child-yellowish-color);
 
                                 &:hover {
                                     background-color: oklch(90.5% .182 98.111);
@@ -705,7 +716,7 @@ body {
                             }
 
                             &:nth-child(2) {
-                                background-color: oklch(96.2% .044 156.743);
+                                background-color: var(--second-child-greenish-color);
 
                                 &:hover {
                                     background-color: oklch(87.1% .15 154.449);
@@ -713,7 +724,7 @@ body {
                             }
 
                             &:nth-child(3) {
-                                background-color: oklch(94.8% .028 342.258);
+                                background-color: var(--third-child-pinkish-color);
 
                                 &:hover {
                                     background-color: oklch(82.3% .12 346.018);
@@ -754,6 +765,122 @@ body {
                                     background-color: #FFDF20;
                                 } */
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .meet-the-authors-section {
+        background-color: #FFD230;
+        padding-block: 80px;
+
+        .container {
+            .header-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 64px;
+
+                h2 {
+                    font-weight: 900;
+                    font-size: 48px;
+                    line-height: 48px;
+                    margin-bottom: 16px;
+                }
+
+                span {
+                    display: inline-block;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 16px;
+
+                }
+
+                .black-box-square {
+                    background-color: #000;
+                    width: 128.117px;
+                    height: 10.2333px;
+                }
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .card {
+                    transition: 0.3s all;
+
+                    &:hover {
+                        transform: translate(-2px, -2px);
+                    }
+
+                    &:first-child {
+                        background-color: var(--first-child-yellowish-color);
+
+                        &:hover>.inner>h3 {
+                            color: var(--redish-color);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        background-color: var(--second-child-greenish-color);
+
+                        &:hover>.inner>h3 {
+                            color: var(--bluesh-color);
+                        }
+                    }
+
+                    &:last-child {
+                        background-color: var(--third-child-pinkish-color);
+
+                        &:hover>.inner>h3 {
+                            color: var(--purplish-color);
+                        }
+                    }
+
+                    /* &:hover {
+                        transform: translate(-2px, -2px);
+
+                        &:first-child>.inner>h3 {
+                            color: var(--redish-color);
+                        }
+
+                        &:nth-child(2)>.inner>h3 {
+                            color: var(--bluesh-color);
+                        }
+
+                        &:last-child>.inner>h3 {
+                            color: var(--purplish-color);
+                        }
+                    } */
+
+                    .inner {
+                        position: relative;
+
+                        .img {
+                            max-width: 120px;
+                            max-height: 120px;
+                            border: 4px solid black;
+                        }
+
+                        h3 {
+                            margin-bottom: 8px;
+                            font-weight: 900;
+                            font-size: 1.875rem;
+                        }
+
+                        >span {
+                            display: inline-block;
+                            margin-bottom: 16px;
+                        }
+
+                        >p {
+                            margin-bottom: 24px;
                         }
                     }
                 }
