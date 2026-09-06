@@ -558,29 +558,34 @@ body {
                         }
 
 
-                        .bottom-section-container {
+
+
+                        .bottom-section {
                             display: flex;
-                            flex-direction: column;
+                            flex-direction: row;
+                            /* justify-content: space-evenly; */
+                            /* justify-content: space-evenly; */
+                            align-items: center;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 20px;
 
-                            .bottom-section {
+                            .section {
                                 display: flex;
-                                flex-direction: row;
-                                /* justify-content: space-evenly; */
-                                /* justify-content: space-evenly; */
-                                align-items: center;
-                                font-weight: 600;
-                                font-size: 14px;
-                                line-height: 20px;
+                                flex-direction: column;
+                                width: 50%;
 
 
-                                .left-section {
-                                    width: 50%;
-                                }
 
-                                .right-section {
-                                    .likes {
-                                        color: red;
-                                    }
+                            }
+
+                            .left-section {}
+
+                            .right-section {
+
+
+                                .likes {
+                                    color: red;
                                 }
                             }
                         }

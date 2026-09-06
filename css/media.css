@@ -45,10 +45,14 @@
                     .card {
                         .inner {
                             .right-section {
-                                .bottom-section-container {
 
-                                    .bottom-section {}
+
+                                .bottom-section {
+                                    .section {
+                                        flex-direction: row;
+                                    }
                                 }
+
                             }
                         }
                     }
@@ -91,7 +95,17 @@
                             flex-direction: row;
 
                             .left-section {
-                                align-self: flex-start;
+                                /* align-self: flex-start; */
+                            }
+
+                            .right-section {
+                                .bottom-section {
+                                    .section {}
+
+                                    .left-section {}
+
+                                    .right-section {}
+                                }
                             }
                         }
                     }
