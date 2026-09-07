@@ -60,6 +60,26 @@
 
             }
         }
+
+        .meet-the-authors-section {
+
+
+            .container {
+
+
+                .cards {
+
+                    .card {
+
+                        max-width: 15%;
+
+                    }
+
+                }
+
+            }
+        }
+
     }
 
 
@@ -122,6 +142,28 @@
                 }
             }
         }
-    }
 
+        .meet-the-authors-section {
+
+
+            .container {
+
+
+                .cards {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .card {
+                        flex-direction: row;
+                        max-width: 46%;
+
+
+                        .inner {}
+                    }
+
+                }
+
+            }
+        }
+    }
 }

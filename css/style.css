@@ -815,6 +815,7 @@ body {
                 .card {
                     transition: 0.3s all;
 
+
                     &:hover {
                         transform: translate(-2px, -2px);
                     }
@@ -861,6 +862,10 @@ body {
 
                     .inner {
                         position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
 
                         .img {
                             max-width: 120px;
@@ -882,6 +887,37 @@ body {
                         >p {
                             margin-bottom: 24px;
                         }
+
+                        .icons {
+                            display: flex;
+                            gap: 16px;
+
+                            i {
+                                background-color: black;
+                                color: white;
+                                padding: 12px;
+                                transition: 0.15s all;
+
+
+
+                                &:hover {
+                                    transform: translate(-2px, -2px);
+                                    box-shadow: 6px 6px black;
+
+                                    &.fa-twitter {
+                                        background-color: #1DA1F2;
+                                    }
+                                    &.fa-linkedin{
+                                        background-color: #155DFC;
+                                    }
+
+                                    &.fa-instagram{
+                                        background-color: #E60076;
+                                    }
+                                }
+                            }
+                        }
+
                     }
                 }
             }
