@@ -1,3 +1,89 @@
+@media screen and (min-width:1024px) {
+
+    body {
+
+        .hero-section {
+
+
+            &>.container {
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+
+                .container {
+                    align-self: center;
+
+                }
+
+            }
+        }
+
+        .latest-articles-section {
+            .container {
+                flex-direction: row;
+
+                &>.left-section {
+                    .card {
+                        .inner {
+                            flex-direction: row;
+
+                            .left-section {
+                                /* align-self: flex-start; */
+                            }
+
+                            .right-section {
+                                .bottom-section {
+                                    .section {}
+
+                                    .left-section {}
+
+                                    .right-section {}
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &>.right-section {
+                    position: sticky;
+                    align-self: flex-start;
+                    top: 0;
+                    bottom: 0;
+                    /* flex-wrap:  wrap ; */
+                    /* justify-content: flex-start;
+                    align-items: flex-end; */
+                }
+            }
+        }
+
+        .meet-the-authors-section {
+
+
+            .container {
+
+
+                .cards {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 0;
+
+                    .card {
+                        flex-direction: row;
+                        padding: 50px;
+                        max-width: 50%;
+
+
+
+                        .inner {}
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1280px) {
     body {
 
@@ -70,93 +156,9 @@
                 .cards {
 
                     .card {
-
-                        max-width: 15%;
-
-                    }
-
-                }
-
-            }
-        }
-
-    }
-
-
-}
-
-@media screen and (min-width:1024px) {
-
-    body {
-
-        .hero-section {
-
-
-            &>.container {
-                flex-direction: row;
-                flex-wrap: nowrap;
-
-
-                .container {
-                    align-self: center;
-
-                }
-
-            }
-        }
-
-        .latest-articles-section {
-            .container {
-                flex-direction: row;
-
-                &>.left-section {
-                    .card {
-                        .inner {
-                            flex-direction: row;
-
-                            .left-section {
-                                /* align-self: flex-start; */
-                            }
-
-                            .right-section {
-                                .bottom-section {
-                                    .section {}
-
-                                    .left-section {}
-
-                                    .right-section {}
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &>.right-section {
-                    position: sticky;
-                    align-self: flex-start;
-                    top: 0;
-                    bottom: 0;
-                    /* flex-wrap:  wrap ; */
-                    /* justify-content: flex-start;
-                    align-items: flex-end; */
-                }
-            }
-        }
-
-        .meet-the-authors-section {
-
-
-            .container {
-
-
-                .cards {
-                    flex-direction: row;
-                    flex-wrap: wrap;
-
-                    .card {
-                        flex-direction: row;
-                        max-width: 46%;
-
+                        padding: 15px;
+                        max-width: 33.3333%;
+                        /* background-color: red; */
 
                         .inner {}
                     }
@@ -165,5 +167,8 @@
 
             }
         }
+
     }
+
+
 }

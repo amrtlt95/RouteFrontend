@@ -11,7 +11,6 @@
 
 body {
     margin: 0;
-    box-sizing: border-box;
     font-family: exo;
     color: black;
 
@@ -20,6 +19,8 @@ body {
     *::before {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+
     }
 
     a {
@@ -815,31 +816,30 @@ body {
                 .card {
                     transition: 0.3s all;
 
-
                     &:hover {
                         transform: translate(-2px, -2px);
                     }
 
-                    &:first-child {
+                    &:first-child .inner {
                         background-color: var(--first-child-yellowish-color);
 
-                        &:hover>.inner>h3 {
+                        &:hover>h3 {
                             color: var(--redish-color);
                         }
                     }
 
-                    &:nth-child(2) {
+                    &:nth-child(2) .inner {
                         background-color: var(--second-child-greenish-color);
 
-                        &:hover>.inner>h3 {
+                        &:hover>h3 {
                             color: var(--bluesh-color);
                         }
                     }
 
-                    &:last-child {
+                    &:last-child .inner {
                         background-color: var(--third-child-pinkish-color);
 
-                        &:hover>.inner>h3 {
+                        &:hover>h3 {
                             color: var(--purplish-color);
                         }
                     }
@@ -866,6 +866,7 @@ body {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        padding: 32px; 
 
                         .img {
                             max-width: 120px;
@@ -882,6 +883,7 @@ body {
                         >span {
                             display: inline-block;
                             margin-bottom: 16px;
+                            max-width: 600ch;
                         }
 
                         >p {
@@ -891,11 +893,15 @@ body {
                         .icons {
                             display: flex;
                             gap: 16px;
+                            align-items: center;
+                            justify-content: center;
 
                             i {
                                 background-color: black;
                                 color: white;
-                                padding: 12px;
+                                width: 48px;
+                                height: 48px;
+                                padding: 20px;
                                 transition: 0.15s all;
 
 
@@ -907,11 +913,12 @@ body {
                                     &.fa-twitter {
                                         background-color: #1DA1F2;
                                     }
-                                    &.fa-linkedin{
+
+                                    &.fa-linkedin {
                                         background-color: #155DFC;
                                     }
 
-                                    &.fa-instagram{
+                                    &.fa-instagram {
                                         background-color: #E60076;
                                     }
                                 }
