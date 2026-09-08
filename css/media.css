@@ -94,92 +94,93 @@
             }
         }
     }
+}
 
-    @media screen and (min-width: 1280px) {
-        body {
-
-
-            .container {
-                max-width: 1280px;
-            }
-
-            .hero-section {
+@media screen and (min-width: 1280px) {
+    body {
 
 
-                .nav {
+        .container {
+            max-width: 1280px;
+        }
 
-                    .container {
-                        .mobile-menu-icon {
-                            display: none;
-                        }
-
-                        .nav-links-desktop {
-                            display: flex;
-                        }
-
-                        .nav-btn-desktop {
-                            display: block;
-                        }
-                    }
-                }
-
-                &>.container {
-                    flex-direction: row;
-                    flex-wrap: nowrap;
+        .hero-section {
 
 
-                    .container {
-                        align-self: center;
+            .nav {
 
-                    }
-
-                }
-            }
-
-            .latest-articles-section {
                 .container {
-                    .left-section {
-                        .card {
-                            .inner {
-                                .right-section {
+                    .mobile-menu-icon {
+                        display: none;
+                    }
+
+                    .nav-links-desktop {
+                        display: flex;
+                    }
+
+                    .nav-btn-desktop {
+                        display: block;
+                    }
+                }
+            }
+
+            &>.container {
+                flex-direction: row;
+                flex-wrap: nowrap;
 
 
-                                    .bottom-section {
-                                        .section {
-                                            flex-direction: row;
-                                        }
+                .container {
+                    align-self: center;
+
+                }
+
+            }
+        }
+
+        .latest-articles-section {
+            .container {
+                .left-section {
+                    .card {
+                        .inner {
+                            .right-section {
+
+
+                                .bottom-section {
+                                    .section {
+                                        flex-direction: row;
                                     }
-
                                 }
+
                             }
                         }
                     }
-
                 }
+
             }
+        }
 
-            .meet-the-authors-section {
-
-
-                .container {
+        .meet-the-authors-section {
 
 
-                    .cards {
+            .container {
 
-                        .card {
-                            padding: 15px;
-                            max-width: 33.3333%;
-                            /* background-color: red; */
 
-                            .inner {}
-                        }
+                .cards {
 
+                    .card {
+                        padding: 15px;
+                        max-width: 33.3333%;
+                        /* background-color: red; */
+
+                        .inner {}
                     }
 
                 }
-            }
 
+            }
         }
 
-
     }
+
+
+}
