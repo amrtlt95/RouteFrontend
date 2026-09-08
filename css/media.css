@@ -81,94 +81,105 @@
 
             }
         }
-    }
-}
 
-@media screen and (min-width: 1280px) {
-    body {
+        .join-the-rebellion-section {
 
 
-        .container {
-            max-width: 1280px;
-        }
-
-        .hero-section {
-
-
-            .nav {
-
-                .container {
-                    .mobile-menu-icon {
-                        display: none;
-                    }
-
-                    .nav-links-desktop {
-                        display: flex;
-                    }
-
-                    .nav-btn-desktop {
-                        display: block;
-                    }
-                }
-            }
-
-            &>.container {
+            .middle-section {
                 flex-direction: row;
-                flex-wrap: nowrap;
-
-
-                .container {
-                    align-self: center;
-
-                }
+                gap: 48px;
+                /* flex-shrink: 0; */
+                align-items: center;
 
             }
         }
+    }
 
-        .latest-articles-section {
+    @media screen and (min-width: 1280px) {
+        body {
+
+
             .container {
-                .left-section {
-                    .card {
-                        .inner {
-                            .right-section {
+                max-width: 1280px;
+            }
+
+            .hero-section {
 
 
-                                .bottom-section {
-                                    .section {
-                                        flex-direction: row;
-                                    }
-                                }
+                .nav {
 
-                            }
+                    .container {
+                        .mobile-menu-icon {
+                            display: none;
+                        }
+
+                        .nav-links-desktop {
+                            display: flex;
+                        }
+
+                        .nav-btn-desktop {
+                            display: block;
                         }
                     }
                 }
 
-            }
-        }
-
-        .meet-the-authors-section {
-
-
-            .container {
+                &>.container {
+                    flex-direction: row;
+                    flex-wrap: nowrap;
 
 
-                .cards {
+                    .container {
+                        align-self: center;
 
-                    .card {
-                        padding: 15px;
-                        max-width: 33.3333%;
-                        /* background-color: red; */
-
-                        .inner {}
                     }
 
                 }
-
             }
+
+            .latest-articles-section {
+                .container {
+                    .left-section {
+                        .card {
+                            .inner {
+                                .right-section {
+
+
+                                    .bottom-section {
+                                        .section {
+                                            flex-direction: row;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .meet-the-authors-section {
+
+
+                .container {
+
+
+                    .cards {
+
+                        .card {
+                            padding: 15px;
+                            max-width: 33.3333%;
+                            /* background-color: red; */
+
+                            .inner {}
+                        }
+
+                    }
+
+                }
+            }
+
         }
 
+
     }
-
-
-}

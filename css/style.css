@@ -936,8 +936,16 @@ body {
 
     .join-the-rebellion-section {
         padding-block: 80px;
+        display: flex;
+        flex-direction: column;
 
         .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 64px;
+
             h2 {
                 font-weight: 900;
                 font-size: 48px;
@@ -956,153 +964,157 @@ body {
             }
         }
 
-        .left-section {
-            margin-bottom: 48px;
-
-            h3 {
-                font-weight: 900;
-                font-size: 36px;
-                line-height: 40px;
-                margin-bottom: 32px;
-            }
-
-            p {
-                padding: 16px;
-                font-weight: 600;
-                font-size: 1.125rem;
-                line-height: 33px;
-                margin-bottom: 16px;
-            }
-
-            .paragraphs {
-                display: flex;
-                flex-direction: column;
-
-                gap: 24px;
+        .middle-section {
+            display: flex;
+            flex-direction: column;
+            .left-section {
                 margin-bottom: 48px;
 
-                .paragraph {
+                h3 {
+                    font-weight: 900;
+                    font-size: 36px;
+                    line-height: 40px;
+                    margin-bottom: 32px;
+                }
+
+                p {
+                    padding: 16px;
+                    font-weight: 600;
+                    font-size: 1.125rem;
+                    line-height: 33px;
+                    margin-bottom: 16px;
+                }
+
+                .paragraphs {
                     display: flex;
-                    gap: 16px;
-                    align-items: center;
+                    flex-direction: column;
 
-                    &:first-child>.icon-container {
-                        background-color: #FB2C36;
-                    }
+                    gap: 24px;
+                    margin-bottom: 48px;
 
-
-                    &:nth-child(2)>.icon-container {
-                        background-color: #2B7FFF;
-                    }
-
-                    &:nth-child(3)>.icon-container {
-                        background-color: #AD46FF;
-                    }
-
-                    &:last-child>.icon-container {
-                        background-color: #00C950;
-                    }
-
-                    .icon-container {
-                        width: 44px;
-                        height: 44px;
+                    .paragraph {
                         display: flex;
-                        justify-content: center;
+                        gap: 16px;
                         align-items: center;
 
-                        i {
-                            color: white;
+                        &:first-child>.icon-container {
+                            background-color: #FB2C36;
                         }
 
-                    }
 
-                    >span {
-                        font-weight: 600;
-                        font-size: 18px;
-                        line-height: 28px;
-                    }
+                        &:nth-child(2)>.icon-container {
+                            background-color: #2B7FFF;
+                        }
 
+                        &:nth-child(3)>.icon-container {
+                            background-color: #AD46FF;
+                        }
+
+                        &:last-child>.icon-container {
+                            background-color: #00C950;
+                        }
+
+                        .icon-container {
+                            width: 44px;
+                            height: 44px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            i {
+                                color: white;
+                            }
+
+                        }
+
+                        >span {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+
+
+
+                    }
+                }
+            }
+
+            .right-section {
+                padding: 40px;
+
+                h3 {
+                    font-weight: 900;
+                    font-size: 30px;
+                    line-height: 36px;
+                    margin-bottom: 32px;
 
 
                 }
-            }
-        }
 
-        .right-section {
-            padding: 40px;
+                .cards {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
 
-            h3 {
-                font-weight: 900;
-                font-size: 30px;
-                line-height: 36px;
-                margin-bottom: 32px;
-
-
-            }
-
-            .cards {
-                display: flex;
-                flex-direction: column;
-                gap: 32px;
-
-                .card {
-                    &:first-child .inner {
-                        background-color: oklch(97.1% .013 17.38);
-                    }
-
-                    &:nth-child(2) .inner {
-                        background-color: oklch(97% .014 254.604);
-                    }
-
-
-                    &:last-child .inner {
-                        background-color: oklch(97.7% .014 308.299);
-                    }
-
-                    .inner {
-                        padding-block: 16px;
-                        padding-inline: 16px;
-                        border: 2px solid #000;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 16px;
-
-                        p {
-                            font-weight: 600;
-                            font-size: 18px;
-                            line-height: 29px;
-
+                    .card {
+                        &:first-child .inner {
+                            background-color: oklch(97.1% .013 17.38);
                         }
 
-                        .bottom-content {
+                        &:nth-child(2) .inner {
+                            background-color: oklch(97% .014 254.604);
+                        }
+
+
+                        &:last-child .inner {
+                            background-color: oklch(97.7% .014 308.299);
+                        }
+
+                        .inner {
+                            padding-block: 16px;
+                            padding-inline: 16px;
+                            border: 2px solid #000;
                             display: flex;
+                            flex-direction: column;
                             gap: 16px;
-                            align-items: center;
 
-                            h4 {
-                                font-weight: 700;
+                            p {
+                                font-weight: 600;
                                 font-size: 18px;
-                                line-height: 28px;
+                                line-height: 29px;
 
                             }
 
-                            span {
-                                font-weight: 400;
-                                font-size: 16px;
-                                line-height: 24px;
-                                color: #525252;
-
-                            }
-
-                            .img {
-                                width: 48px;
-                            }
-
-                            .member-info {
+                            .bottom-content {
                                 display: flex;
-                                justify-content: center;
-                                flex-direction: column;
+                                gap: 16px;
+                                align-items: center;
 
+                                h4 {
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    line-height: 28px;
+
+                                }
+
+                                span {
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #525252;
+
+                                }
+
+                                .img {
+                                    width: 48px;
+                                }
+
+                                .member-info {
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+
+                                }
                             }
                         }
                     }
