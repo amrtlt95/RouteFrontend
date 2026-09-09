@@ -1,3 +1,18 @@
+@media screen and (min-width:768px) {
+    body {
+        .footer {
+            .container {
+                .upper-section {
+                    .section-container {
+                        flex-direction: row;
+                        gap: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width:1024px) {
 
     body {
@@ -93,6 +108,14 @@
 
             }
         }
+
+        .footer {
+            .container {
+                .upper-section {
+                    flex-direction: row;
+                }
+            }
+        }
     }
 }
 
@@ -179,7 +202,15 @@
 
             }
         }
-
+.footer{
+    .container{
+        .bottom-section{
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+        }
+    }
+}
     }
 
 
