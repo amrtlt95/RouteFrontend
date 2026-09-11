@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 100px 1fr 100px;
+        gap: 5px;
+
+        .item {
+            height: 50px;
+        }
+
+
+        .item-1 {
+            background-color: red;
+        }
+
+        .item-2 {
+            background-color: aqua;
+        }
+
+        .item-3 {
+            background-color: teal;
+        }
+
+        .item-4 {
+            background-color: brown;
+        }
+
+        .item-5 {
+            background-color: yellow;
+        }
+
+        .item-6 {
+            background-color: green;
+        }
+    }
+}
