@@ -11,16 +11,36 @@ body {
 
     .container {
         display: grid;
-        grid-template-columns: 100px 1fr 100px;
-        gap: 5px;
+        /* grid-template-columns: 100px 1fr 100px; */
+        /* grid-template-columns: 95px 1fr; */
+        /* grid-template-columns: 15% 65% 25%; */
+        /* grid-auto-columns: 150px;
+          grid-template-columns: 50px 1fr; */
+        /* grid-template-rows: 95px 1fr 70px;
+       grid-template-columns: 1fr 1fr; */
+
+        /* gap: 5px; */
+
+
+        /* grid-template-rows: 90px 300px 1fr;
+        grid-template-columns: auto auto auto auto; */
+
+        grid-template-columns: repeat(auto-fit, 15px);
+        height: 500px;
 
         .item {
-            height: 50px;
+            /* height: 50px; */
         }
 
 
         .item-1 {
             background-color: red;
+            /* grid-area: 1/1/5/-1; */
+            grid-area: 1 / 1 / 4 / 3;
+            /* Row line 1 to 4, Column line 1 to 3 */
+            /* align-self: ; */
+            height: 100%;
+            /* Overrides 50px and fills the full grid area */
         }
 
         .item-2 {

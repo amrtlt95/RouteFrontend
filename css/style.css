@@ -12,9 +12,111 @@ body {
         box-sizing: border-box;
     }
 
-    picture>img {
+    img {
         width: 100%;
         display: block;
+    }
+
+    .container {
+        padding-inline: 16px;
+        padding-block-start: 16px;
+        padding-block-start: 32px;
+
+
+        .hero {
+            background-color: red;
+            padding: 16px;
+
+
+            display: grid;
+            grid-template: repeat(3, fit-content) / repeat(2, fit-content);
+
+
+            .upper-content {
+                background-color: teal;
+                grid-column: span 3;
+                grid-row: 1;
+
+                display: flex;
+                gap: 0.75rem;
+
+                figure {
+                    background-color: #3B3FE4;
+                    align-self: flex-start;
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 1rem;
+
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+
+                }
+
+                .headers {
+                    display: flex;
+                    flex-direction: column;
+
+                    h1 {
+                        font-size: 1.25rem;
+                        line-height: 32px;
+                    }
+
+                    span {
+                        display: inline-block;
+                        font-size: 0.75rem;
+                        line-height: 16px;
+                        color: oklch(44.6% .03 256.802);
+                    }
+                }
+            }
+
+            .middle-section {
+                background-color: aqua;
+
+                grid-row: 2;
+                grid-column: span 3;
+
+                display: flex;
+
+                .icons {
+                    display: flex;
+                    gap: 0.25rem;
+
+                    .icon {
+                        width: 32px;
+                        height: 32px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #F3F4F6;
+                        border-radius: 0.75rem;
+
+                        img {
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+                }
+            }
+
+            .bottom-section {
+                background-color: beige;
+                grid-column: span 3;
+                grid-row: 3;
+            }
+
+            img {
+                /* width: 50px; */
+            }
+
+
+        }
     }
 
 }
