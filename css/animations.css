@@ -1,0 +1,36 @@
+ @keyframes update-color {
+     /* from {
+                            background-color: oklch(72.3% .219 149.579);
+                        }
+
+                        to {
+                            background-color: oklch(79.2% .209 151.711);
+                        } */
+
+     10% {
+         background-color: oklch(98.2% .018 155.826);
+     }
+
+     20% {
+         background-color: oklch(96.2% .044 156.743);
+     }
+
+     30% {
+         background-color: oklch(79.2% .209 151.711);
+     }
+
+
+     40% {
+         background-color: oklch(62.7% .194 149.214);
+     }
+
+
+     50% {
+         background-color: oklch(62.7% .194 149.214);
+     }
+
+
+     /* 60% {
+         background-color: oklch(44.8% .119 151.328);
+     } */
+ }

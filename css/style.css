@@ -17,23 +17,29 @@ body {
         display: block;
     }
 
+    .section-container {
+        box-shadow: #0000001a 0 1px 3px 0;
+    }
+
     .container {
         padding-inline: 16px;
         padding-block-start: 16px;
         padding-block-start: 32px;
 
-
         .hero {
-            background-color: red;
             padding: 16px;
 
 
             display: grid;
             grid-template: repeat(3, fit-content) / repeat(2, fit-content);
-
+            gap: 1rem;
+            background-color: #F5F9FD;
+            border: 1px solid #F4F8FD;
+            border-radius: 1rem;
+            margin-bottom: 24px;
 
             .upper-content {
-                background-color: teal;
+                /* background-color: teal; */
                 grid-column: span 3;
                 grid-row: 1;
 
@@ -77,38 +83,114 @@ body {
             }
 
             .middle-section {
-                background-color: aqua;
+                /* background-color: aqua; */
 
                 grid-row: 2;
                 grid-column: span 3;
-
                 display: flex;
+                justify-content: space-between;
+
 
                 .icons {
                     display: flex;
                     gap: 0.25rem;
 
+
                     .icon {
+
                         width: 32px;
                         height: 32px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: #F3F4F6;
                         border-radius: 0.75rem;
+                        background-color: lightgray;
+                        transition: 0.2s all;
+
+                        &:hover {
+                            background-color: #F3F4F6;
+
+                        }
+
+                        &.notification-icon {
+                            position: relative;
+                            /* background-color: inherit; */
+
+                            span {
+                                background-color: red;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                color: white;
+                                border-radius: 50%;
+                                position: absolute;
+                                width: 12px;
+                                height: 12px;
+                                font-size: 0.75rem;
+                                line-height: 16px;
+                                top: 0;
+                                right: 0;
+                                transform: translate(1px, -5px);
+                            }
+                        }
 
                         img {
                             width: 14px;
                             height: 14px;
                         }
                     }
+
+
+                }
+
+                >figure {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-inline: 12px;
+                    padding-block: 8px;
+                    border-radius: 0.75rem;
+                    border: 1px solid oklch(92.8% .006 264.531);
+                    background-color: white;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 0.75rem;
+
+                    }
                 }
             }
 
             .bottom-section {
-                background-color: beige;
+                background-color: #F0FDF4;
                 grid-column: span 3;
                 grid-row: 3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                border-radius: 0.5rem;
+
+                .online-icon {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    animation-name: update-color;
+                    animation-iteration-count: infinite;
+                    animation-duration: 5s;
+                    animation-timing-function: cubic-bezier(.4, 0, .6, 1);
+                    animation-direction: normal;
+
+                }
+
+                span {
+                    color: oklch(52.7% .154 150.069);
+                    display: inline-block;
+                    line-height: 16px;
+                    font-size: 0.75rem;
+                }
             }
 
             img {
