@@ -25,17 +25,34 @@ body {
         background-color: #3B3FE4;
         width: 48px;
         height: 48px;
+    }
+
+
+    .nav-icon {
+
+        width: 2.5rem;
+        height: 2.5rem;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+
+    .logo,
+    .nav-icon {
         display: flex;
+        border-radius: 1rem;
         justify-content: center;
         align-items: center;
-        border-radius: 1rem;
-
     }
 
     .container {
         padding-inline: 16px;
         padding-block-start: 16px;
         padding-block-start: 32px;
+        background-color: #F8F9FA;
 
         header {
             position: relative;
@@ -51,12 +68,77 @@ body {
                 bottom: 0;
                 overflow: scroll;
                 padding: 12px;
+                background-color: #FDFEFF;
 
+                gap: 30px;
+
+
+
+                >.other-sections {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    >.middle,
+                    >.bottom {
+                        .light-blue-bg {
+                            background-color: #EFF6FF;
+                        }
+                    }
+
+                    >.middle {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+
+
+                        .grey-nav-icon {
+                            transition: 0.2s all;
+
+                            &:hover {
+                                background-color: #F9FAFB;
+                            }
+                        }
+                    }
+
+                    >.bottom {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .hover-icon-container {
+                            border-radius: 0.5rem;
+                            padding-block: 8px;
+                            background-color: transparent;
+transition: 0.25s all;
+                            &:hover {
+                            background-color: #FAFAFA;
+                            transform: translateX(2px);
+
+                            }
+
+                            >.plus {
+                                background-color: #D4F2E0;
+                            }
+
+                            >.reciept {
+                                background-color: #EEDEFA;
+                            }
+
+                            >.chart-line {
+                                background-color: #FAE4D4;
+                            }
+                        }
+
+                    }
+
+                }
             }
 
             section.hero {
                 padding: 16px;
-                margin-right: 64px;
+                /* margin-right: 64px; */
 
 
                 display: grid;
@@ -83,8 +165,8 @@ body {
 
 
                         img {
-                            width: 18px;
-                            height: 18px;
+                            width: 23px;
+                            height: 23px;
                         }
 
 
