@@ -13,30 +13,33 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid px-4">
 
-        <header>
-            <div class="top-header">
-                <div class="left-section">
-                    <div class="icon-container">
+        <header class="py-3">
+            <div class="top-header d-flex justify-content-between align-items-center">
+                <div class="left-section d-flex gap-3">
+                    <div class="icon-container d-flex justify-content-center align-items-center rounded-circle">
                     <i class="fa-solid fa-utensils text-light"></i>
 
                     </div>
                     <div class="headers">
-                        <h1>What's For Dinner</h1>
-                        <span>What's For Dinner</span>
+                        <h1 class="fw-bold fs-4 lh-sm">What's For Dinner</h1>
+                        <span class="fw-normal lh-base text-secondary">Your daily meal inspiration</span>
                     </div>
                 </div>
-                <div class="right-section">
+                <div class="right-section d-flex gap-4 align-items-center">
                     <i class="fa-solid fa-bookmark"></i>
                     <i class="fa-solid fa-clock-rotate-left"></i>
                     <i class="fa-solid fa-gear"></i>
-                    <div class="figure">
-                        <img src="images/avatar-4.jpg" alt="profile-picture">
-                    </div>
+                    <figure class="">
+                        <img class="rounded-circle" src="images/avatar-4.jpg" alt="profile-picture">
+                    </figure>
                 </div>
             </div>
         </header>
+		   </div>
+		   
+		   <div class="container-fluid px-4">
         <main>
             <article class="meal">
 
@@ -133,8 +136,8 @@
             <hr/>
             <button><i class="fas fa-rotate"></i>Try Another Recipe</button>
         </main>
-    </div>
-    <script src="js/font-awesome.js"></script>
+ </div>
+    <!-- <script src="js/font-awesome.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
 </body>
 
