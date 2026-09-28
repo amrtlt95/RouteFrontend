@@ -1,0 +1,29 @@
+*:root {
+    --main-color: #FB3033;
+}
+
+body {
+
+    font-family: ui-sans-serif;
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    .container {
+        header {
+            .left-section {
+               .icon-container {
+                    background-color: var(--main-color);
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
