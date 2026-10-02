@@ -152,19 +152,45 @@ body {
                         /* this is for the ingredients content*/
 
                         .container {
+
                             /* background-color: aqua; */
                             >.row {
+
                                 /* background-color: teal; */
                                 >.element {
-                                    /* background-color: beige; */
-                                    .cell.row {
-                                        background-color: #FFFFFF;
-                                        /* padding:5px; */
+                                    @media screen and (max-width:767px) {
+                                        font-size: .75rem;
+                                    }
+                                        background-color: #F9FAFB;
+                                        >.left {
+                                            .fa-fire {
+                                                color: #F54900;
+                                                background-color: #FFEDD4;
+                                            }
+                                            .fa-dumbbell{
+                                                color:#155DFC;
+                                                background-color: #DBEAFE;
+                                            }
 
-                                        >.col-6 {
-                                            background-color: #F9FAFB;
+                                            .fa-wheat-awn{
+                                                color:#D08700;
+                                                background-color: #FEF9C2;
+                                            }
 
+                                            .fa-droplet{
+                                                color: #E7000B;
+                                                background-color: #FFE2E2;
+                                            }
 
+                                            .fa-seedling{
+                                                color:#00A63E;
+                                                background-color: #F9FAFB;
+                                            }
+
+                                            .fa-cube{
+                                                color:#E60076;
+                                                background-color: #FCE7F3;
+                                            }
                                         }
 
                                     }
@@ -179,4 +205,3 @@ body {
             }
         }
     }
-}
