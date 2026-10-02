@@ -39,7 +39,7 @@
         </header>
     </div>
 
-    <div class="container-fluid px-4">
+    <div class="container-fluid px-4 py-4">
         <main>
             <article class="meal">
 
@@ -54,37 +54,53 @@
                         <span class="reviews fw-normal text-black-50">(356 reviews)</span>
                     </div>
 
-                    <div class="bottom-container position-absolute p-4">
-                        <div class="prep-time">
-                            <i class="fa-solid fa-clock"></i>
-                            <span>Prep Time</span>
-                            <span class="prep-minutes">10 min</span>
-                        </div>
-                        <div class="cook-time">
-                            <i class="fa-solid fa-fire-burner"></i>
-                            <span>Cook Time</span>
-                            <span class="cook-time">15 min</span>
-                        </div>
-                        <div class="serving">
-                            <i class="fa-solid fa-users"></i>
-                            <span>Servings</span>
-                            <span class="serving-people">2 people</span>
+                    <!-- <div class="bottom-container container px-4 py-4 position-absolute  text-bg-light"> -->
+                    <div class="container position-relative">
+                        <div class="row bottom-container py-4 position-absolute text-bg-light rounded-4">
+                            <div class="prep-time col-4 d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-solid fa-clock fa-xl mb-3"></i>
+                                <span>Prep Time</span>
+                                <span class="fw-bold prep-minutes">10 min</span>
+                            </div>
+                            <div class="cook-time  col-4 d-flex flex-column justify-content-center align-items-center"">
+                            <i class=" fa-solid fa-fire-burner fa-xl mb-3"></i>
+                                <span>Cook Time</span>
+                                <span class="fw-bold cook-time">15 min</span>
+                            </div>
+                            <div
+                                class="serving col-4 col-4 d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-solid fa-users fa-xl mb-3"></i>
+                                <span>Servings</span>
+                                <span class="fw-bold serving-people">2 people</span>
+                            </div>
                         </div>
                     </div>
+
                 </section>
-                <section class="meal-info">
-                    <span class="difficulty">Easy</span>
-                    <span class="food-category">Seafood</span>
-                    <div class="left-section">
-                        <h2 class="meal-name">Shrimp Scampi</h2>
-                        <span class="meal-description">Garlicky shrimp in white wine butter sauce</span>
-                    </div>
-                    <div class="right-section">
+                <section class="meal-info p-4">
+                    <div class="badges-container mb-3">
+                        <span class="difficulty badge me-2 text-bg-success rounded-pill">Easy</span>
+                        <span class="food-category badge text-bg-primary rounded-pill">Seafood</span>
 
-                        <i class="fa-solid fa-bookmark"></i>
-                        <i class="fa-solid fa-share-nodes"></i>
+
                     </div>
 
+                    <div class="row m-0  mb-4">
+
+                        <h2 class="col-10 meal-name p-0 mb-2 fw-bold">Shrimp Scampi</h2>
+                        <div class="col-2 right-section p-0 ">
+
+
+
+                            <i class="fa-solid fa-bookmark fa-canvas-roomy p-3 rounded-3"></i>
+                            <i class="fa-solid fa-share-nodes fa-canvas-roomy p-3 ms-1 rounded-3"></i>
+                        </div>
+
+
+                        <span class="col-12 p-0 meal-description text-black-50">Garlicky shrimp in white wine butter
+                            sauce</span>
+
+                    </div>
 
 
 
@@ -95,50 +111,154 @@
 
 
 
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+
+                    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
 
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                                aria-selected="true"> <i class="fa-solid fa-list-check"></i> Ingredients</button>
+                            <button class="nav-link active" id="ingredients" data-bs-toggle="tab"
+                                data-bs-target="#ingredients-pane" type="button" role="tab"
+                                aria-controls="home-tab-pane" aria-selected="true"> <i
+                                    class="fa-solid fa-list-check"></i> Ingredients</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                aria-controls="profile-tab-pane" aria-selected="false"> <i
+                            <button class="nav-link" id="instructions" data-bs-toggle="tab"
+                                data-bs-target="#instructions-pane" type="button" role="tab"
+                                aria-controls="instructions" aria-selected="false"> <i
                                     class="fa-solid fa-book-open"></i> Instructions</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
-                                data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                aria-controls="contact-tab-pane" aria-selected="false"><i
-                                    class="fa-solid fa-chart-pie"></i> Nutrition</button>
+                            <button class="nav-link" id="nutrition" data-bs-toggle="tab"
+                                data-bs-target="#nutrition-pane" type="button" role="tab" aria-controls="nutrition-pane"
+                                aria-selected="false"><i class="fa-solid fa-chart-pie"></i> Nutrition</button>
                         </li>
 
                         <li class="nav-item" role="presentation"></li>
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
-                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
-                            aria-selected="false"><i class="fa-solid fa-lightbulb"></i> Chef's Tips</button>
+                        <button class="nav-link" id="chef-tips" data-bs-toggle="tab" data-bs-target="#chef-tips-pane"
+                            type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i
+                                class="fa-solid fa-lightbulb"></i> Chef's Tips</button>
                         </li>
 
 
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
-                            aria-labelledby="home-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                            tabindex="0">...</div>
-                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                            tabindex="0">...</div>
-                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
-                            tabindex="0">...</div>
-                    </div>
-                </section>
+                        <div class="tab-pane fade show active" id="ingredients-pane" role="tabpanel"
+                            aria-labelledby="ingredients" tabindex="0">
 
-            </article>
-            <hr />
-            <button><i class="fas fa-rotate"></i>Try Another Recipe</button>
-        </main>
+                            <ol>
+                                <li>1 large romaine lettuce</li>
+                                <li>1/2 cup Caesar dressing</li>
+                                <li>1/2 cup parmesan cheese, shaved</li>
+                                <li>1 cup croutons</li>
+                                <li>2 anchovy fillets (optional)</li>
+                                <li>Lemon wedges</li>
+                                <li>Black pepper</li>
+                            </ol>
+
+                        </div>
+                        <div class="tab-pane fade" id="instructions-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <ol>
+                                <li>Wash and dry romaine lettuce thoroughly. Tear into bite-sized pieces.</li>
+                                <li>Place lettuce in a large salad bowl.</li>
+                                <li>Add Caesar dressing and toss until evenly coated.</li>
+                                <li>Add croutons and half the parmesan cheese. Toss gently.</li>
+                                <li>Top with remaining parmesan shavings and anchovies if using.</li>
+                            </ol>
+                        </div>
+                        <div class="tab-pane fade" id="nutrition-pane" role="tabpanel" aria-labelledby="contact-tab"
+                            tabindex="0">
+
+<!-- 
+                            <div class="container">
+                                <div class="row m0">
+                                    <div class="col-6 element">
+                                        <div class="cell row p-2 justify-content-between align-items-center">
+                                            <div class="col-6 p-3">
+                                                <i class="fa-solid fa-fire"></i>
+                                                <span>Calories</span>
+                                            </div>
+
+                                           <div class="col-6">
+                                             <span class="">320 kcal</span>
+                                           </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 element">
+                                        <div class="cell row p-2">
+                                            <div class="col-6 p-3">
+
+                                                <i class="fa-solid fa-dumbbell"></i>
+                                                <span>Protein</span>
+                                            </div>
+
+                                            <span class="col-6 ">12g</span>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-6 element">
+                                        <div class="cell row p-2">
+                                            <div class="col-6 p-3">
+                                                <i class="fa-solid fa-wheat-awn"></i>
+                                                <span>Carbohydrates</span>
+                                            </div>
+
+                                            <span class="col-6 ">18g</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-6 element">
+                                        <div class="cell row p-2">
+                                            <div class="col-6 p-3">
+                                                <i class="fa-solid fa-droplet"></i>
+                                                <span>Fat</span>
+                                            </div>
+
+                                            <span class="col-6 text-end">22g</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-6 element">
+                                        <div class="cell row p-2">
+                                            <div class="col-6 p-3">
+                                                <i class="fa-solid fa-seedling"></i>
+                                                <span>Fiber</span>
+                                            </div>
+
+                                            <span class="col-6 ">3g</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-6 element">
+                                        <div class="cell row p-2">
+                                            <div class="col-6 p-3">
+                                                <i class="fa-solid fa-cube"></i>
+                                                <span>Sodium</span>
+                                            </div>
+
+                                            <span class="col-6">680mg</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div> -->
+                        </div>
+
+
+
+                    </div>
+                  
+    </div>
+    </section>
+
+    </article>
+    <hr />
+    <button><i class="fas fa-rotate"></i>Try Another Recipe</button>
+    </main>
     </div>
     <!-- <script src="js/font-awesome.js"></script> -->
     <script src="js/bootstrap.min.js"></script>

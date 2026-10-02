@@ -1,5 +1,6 @@
 :root {
     --main-color: #FB3033;
+    --light-main-color: #FFFAEC;
     --icon-gray-color: oklch(44.6% .03 256.802);
 
 }
@@ -65,7 +66,7 @@ body {
 }
 
 .container-fluid:has(main) {
-    background-color: #FBF9E5;
+    background-color: var(--light-main-color);
 
     main {
         background-color: #FFFFFF;
@@ -82,8 +83,98 @@ body {
                     left: 1.5rem;
                 }
 
-                .bottom-container {
-                    bottom: 1.5rem;
+                .container {
+                    >.bottom-container {
+                        bottom: 1.5rem;
+                        left: .25rem;
+                        right: .25rem;
+
+
+                        >div {
+                            >:first-child {
+                                display: block;
+                            }
+
+                            >:nth-child(2) {
+                                color: #6A7282;
+                                font-size: .875rem;
+                            }
+                        }
+
+                        >div:first-child {
+                            i {
+                                color: #FF6900;
+                            }
+
+                        }
+
+                        >div:nth-child(2) {
+                            i {
+                                color: #FB2C36;
+                            }
+                        }
+
+                        >div:last-child {
+                            i {
+                                color: #2B7FFF;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+            section.meal-info {
+                .row {
+                    .right-section {
+                        i {
+                            color: var(--main-color);
+                            background-color: #FEE5CE;
+                        }
+                    }
+                }
+
+                ul.nav-tabs {
+                    /* This is the main nav buttons*/
+
+                }
+
+                .tab-content {
+                    /*the inner content container*/
+
+                    .tab-pane#ingredients-pane {
+                        /* this is for the ingredients content*/
+                        background-color: var(--light-main-color);
+                    }
+
+                    .tab-pane#nutrition-pane {
+                        /* this is for the ingredients content*/
+
+                        .container {
+                            /* background-color: aqua; */
+                            >.row {
+                                /* background-color: teal; */
+                                >.element {
+                                    /* background-color: beige; */
+                                    .cell.row {
+                                        background-color: #FFFFFF;
+                                        /* padding:5px; */
+
+                                        >.col-6 {
+                                            background-color: #F9FAFB;
+
+
+                                        }
+
+                                    }
+                                }
+
+                            }
+
+
+                        }
+                    }
                 }
             }
         }
