@@ -152,16 +152,25 @@ body {
                         /* this is for the ingredients content*/
 
                         .container {
-
+/* background-color: teal; */
                             /* background-color: aqua; */
                             >.row {
 
                                 /* background-color: teal; */
+                                /* background-color: green; */
+                                background-color: white;
                                 >.element {
                                     @media screen and (max-width:767px) {
                                         font-size: .75rem;
                                     }
-                                        background-color: #F9FAFB;
+                                        /* background-color: #F9FAFB; */
+                                        /* background-color: red; */
+                                        /* background-color: aqua; */
+                                        background-color: white;
+                                        .content{
+                                            /* background-color: blue; */
+                                            background-color: #F9FAFB;
+                                        
                                         >.left {
                                             .fa-fire {
                                                 color: #F54900;
@@ -191,6 +200,7 @@ body {
                                                 color:#E60076;
                                                 background-color: #FCE7F3;
                                             }
+                                            }
                                         }
 
                                     }
@@ -201,7 +211,13 @@ body {
 
                         }
                     }
-                }
+                >button{
+                background-color: var(--main-color);
             }
+                }
+             
+            }
+
+           
         }
     }
