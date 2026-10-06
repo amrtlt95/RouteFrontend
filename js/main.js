@@ -935,7 +935,7 @@ function getMeal(){
 //let us start
 
 
-  var randomMeal = getMeal();
+  var randomMeal = null;
 
 function updateRating(){
  var rating=document.getElementById("rating")
@@ -960,7 +960,7 @@ function updateImage(){
 
 function updatePrepTime(){
     var prepTime=document.getElementById("prep-time");
-    prepTime.innerHTML=`${randomMeal} min`;
+    prepTime.innerHTML=`${randomMeal.preparationTime} min`;
 }
 
 
@@ -968,7 +968,7 @@ function updatePrepTime(){
 
 function updateCookTime(){
     var cookTime=document.getElementById("cook-time");
-    prepTime.innerHTML=`${randomMeal.cookTime} min`;
+    cookTime.innerHTML=`${randomMeal.cookTime} min`;
 }
 
 
@@ -1009,37 +1009,94 @@ function updateMealDescription(){
 
 
 function updateMealIngredients(){
+  var cartona = ``;
     var mealIngredients = document.getElementById("meal-ingredients");
     for(var i=0; i<randomMeal.ingredients.length; i++){
-        mealIngredients.innerHTML+=`<li>${randomMeal.ingredients[i]}</li>`;
+       cartona+= `<li>${randomMeal.ingredients[i]}</li>`;
+        mealIngredients.innerHTML = cartona;
     }
 }
+
+
+
+function updateMealInstructions(){
+  var cartona =``;
+    var instructions = document.getElementById("meal-instructions");
+    for(var i=0; i<randomMeal.instructions.length; i++){
+      cartona+=`<li>${randomMeal.instructions[i]}</li>`;
+        instructions.innerHTML=cartona;
+    }
+}
+
+
 
 
 
 
 function updateMealCalories(){
-    var calories = 
+    var calories = document.getElementById("calories");
+    calories.innerHTML=randomMeal.nutrition.calories;
+}
+function updateMealCarbohydrates(){
+    var carbohydrates = document.getElementById("carbohydrates");
+    carbohydrates.innerHTML=randomMeal.nutrition.carbohydrates;
+}
+function updateMealFat(){
+    var fat = document.getElementById("fat");
+    fat.innerHTML=randomMeal.nutrition.fat;
+}
+function updateMealFiber(){
+    var fiber = document.getElementById("fiber");
+    fiber.innerHTML=randomMeal.nutrition.fiber;
+}
+function updateMealProtein(){
+    var protein = document.getElementById("protein");
+    protein.innerHTML=randomMeal.nutrition.protein;
+}
+function updateMealSodium(){
+    var sodium = document.getElementById("sodium");
+    sodium.innerHTML=randomMeal.nutrition.sodium;
 }
 
 
 function updateMealNutrition(){
-    var mealNutrition = document.getElementById("meal-nutrition");
-    for(var i=0; i<randomMeal.instructions.length; i++){
-        mealInstructions.innerHTML+=`<li>${randomMeal.nutrition.calories[i]}</li>`;
-    }
+    updateMealCalories();
+    updateMealCarbohydrates();
+    updateMealFat();
+    updateMealFiber();
+    updateMealProtein();
+    updateMealSodium();
 }
 
 
 
 
+function updateChefTips(){
+  var cartona = ``;
+var chefTips = document.getElementById("meal-chef-tips");
 
+for(var i=0; i<randomMeal.chefTips.length; i++){
+  cartona+=`<li>${randomMeal.chefTips[i]}</li>`
+  chefTips.innerHTML = cartona;
+}
+
+}
 
 function updateThePage(){
-  
-    //update rating
-    (function(){
-       
-    })()
+  randomMeal= getMeal();
+  updateRating();
+  updateReviewers();
+  updateImage();
+  updatePrepTime();
+  updateCookTime();
+  updatePeopleToServe();
+  updateDifficulty();
+  updateCategory();
+  updateMealName();
+  updateMealDescription();
+  updateMealIngredients();
+  updateMealInstructions();
+  updateMealNutrition();
+  updateChefTips();
 }
 //
