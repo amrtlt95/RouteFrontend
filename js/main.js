@@ -897,7 +897,7 @@ var ourMeals = [
 
 
 function getMeal(){
-    var index = ourMeals.length
+    var index = ourMeals.length-1
        
         //our condition is we want to make sure the random number is <=arrayLength , how to make sure ?
         //random returns a fraction from 0 to 1 , we could simply multiply the random * length
