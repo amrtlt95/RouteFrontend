@@ -19,6 +19,7 @@
 }
 body{
     font-family: "Alan-Sans";
+     background-color: #F8F9FA;
 }
 
 
@@ -26,6 +27,20 @@ body{
 header{
     box-shadow: 0 .5rem 1rem var(--shadow-color);
 }
+
 section.add-edit-section{
-    box-shadow: 0 .5rem 1rem var(--shadow-color);;
+    .container{
+    background-color: white;
 }
+    box-shadow: 0 .5rem 1rem var(--shadow-color);
+    
+}
+
+
+
+ section.products-and-search-section{
+
+    .container{
+        background-color: #F8F9FA;
+    }
+ }
