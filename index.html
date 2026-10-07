@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+ <h1>Store Management System</h1>
+    <span>Efficiently manage your product inventory</span>
+    </head>
+   <main>
+    <section class="add-edit-section">
+<form>
+        <div class="form-header">
+            <!-- plus icon -->
+        <h2>Add New Product</h2>
+
+        </div>
+
+        <label for="product-name">Product Name</label>
+        <input type="text" name="product-name" id="product-name"/>
+
+
+
+       <label for="product-price">Product Price</label>
+        <input type="number" name="product-price" id="product-price"/>
+
+
+
+
+            <label for="product-category">Product Category</label>
+        <input list="product-category-list" name="product-category" id="product-category"/> 
+
+<datalist id="product-category-list">
+    <option value="TV"></option>
+    <option value="Mobile"></option>
+    <option value="Laptop"></option>
+</datalist>
+
+
+
+
+<label for="product-image">Product Image</label>
+<input type="file" id="product-image" name="product-image"/>
+
+<label for="product-description">Product Desctiption</label>
+<textarea type="text" id="product-description" name="product-description"></textarea>
+<button type="button">Add Product</button>
+    </form>
+
+    </section>
+    
+
+    <section class="products-and-search-section">
+        <input type="text" placeholder="Search Products">
+<div class="header-section">
+    <!-- fontawesome icon -->
+<h2>Product Inventory</h2>
+
+<!-- badge of total products -->
+
+</div>
+
+
+<!-- cards items -->
+
+
+
+
+
+    </section>
+
+   </main>
+
+   <footer>
+    <h2>Store Management System</h2>
+    <p>Efficiently manage your product inventory with our easy-to-use system.</p>
+    <p>© 2023 Store Management System. All rights reserved.</p>
+    <p>Made with <!-- hearticon--> by Route Academy</p>
+   </footer>
+</body>
+</html>
