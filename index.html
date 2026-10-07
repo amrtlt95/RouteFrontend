@@ -1,85 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <head>
- <h1>Store Management System</h1>
-    <span>Efficiently manage your product inventory</span>
-    </head>
-   <main>
-    <section class="add-edit-section">
-<form>
-        <div class="form-header">
-            <!-- plus icon -->
-        <h2>Add New Product</h2>
+    <header class="d-flex text-bg-primary flex-column justify-content-center align-items-center p-4 mb-5">
+        <h1 class="fw-bold">Store Management System</h1>
+        <span class="fs-5 fw-light">Efficiently manage your product inventory</span>
+    </header>
+    <main>
+        <section class="add-edit-section container">
+            <form class="text-secondary">
+                <div
+                    class="form-header d-flex align-items-center text-primary border border-top-0 border-start-0 border-end-0 gap-1 p-3 ">
+                    <!-- plus icon -->
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <h2 class="fw-medium fs-5">Add New Product</h2>
 
-        </div>
-
-        <label for="product-name">Product Name</label>
-        <input type="text" name="product-name" id="product-name"/>
-
-
-
-       <label for="product-price">Product Price</label>
-        <input type="number" name="product-price" id="product-price"/>
+                </div>
 
 
 
+                <div class="container p-4 mb-5">
+                    <div class="row">
+                        <div class="col-md-6 py-4">
+                            <div class="form-floating">
+                                <input class="form-control"  type="text" name="product-name" id="product-name" placeholder="Product Name" />
 
-            <label for="product-category">Product Category</label>
-        <input list="product-category-list" name="product-category" id="product-category"/> 
+                                <label class=""  for="product-name"><i class="fa-solid fa-tag"></i> Product Name</label>
+                            </div>
+                        </div>
 
-<datalist id="product-category-list">
-    <option value="TV"></option>
-    <option value="Mobile"></option>
-    <option value="Laptop"></option>
-</datalist>
+                        <div class="col-md-6 py-4">
 
-
-
-
-<label for="product-image">Product Image</label>
-<input type="file" id="product-image" name="product-image"/>
-
-<label for="product-description">Product Desctiption</label>
-<textarea type="text" id="product-description" name="product-description"></textarea>
-<button type="button">Add Product</button>
-    </form>
-
-    </section>
-    
-
-    <section class="products-and-search-section">
-        <input type="text" placeholder="Search Products">
-<div class="header-section">
-    <!-- fontawesome icon -->
-<h2>Product Inventory</h2>
-
-<!-- badge of total products -->
-
-</div>
+                            <div class="form-floating">
 
 
-<!-- cards items -->
+                                <input class="form-control" type="number" name="product-price" id="product-price" placeholder="Product Price" />
+
+                                <label class="" for="product-price"><i class="fa-solid fa-dollar-sign"></i> Product Price</label>
+
+                            </div>
+
+                        </div>
 
 
 
 
 
-    </section>
 
-   </main>
 
-   <footer>
-    <h2>Store Management System</h2>
-    <p>Efficiently manage your product inventory with our easy-to-use system.</p>
-    <p>© 2023 Store Management System. All rights reserved.</p>
-    <p>Made with <!-- hearticon--> by Route Academy</p>
-   </footer>
+
+
+
+                        <div class="col-md-6 py-4">
+                            <div class="form-floating">
+                                <input class="form-control" list="product-category-list" name="product-category" id="product-category" placeholder=" Product Category"/>
+                                <label class="" for="product-category"><i class="fa-solid fa-grip"></i> Product Category</label>
+                                  
+                                <datalist id="product-category-list">
+                                    <option value="TV"></option>
+                                    <option value="Mobile"></option>
+                                    <option value="Laptop"></option>
+                                </datalist>
+                          </div>
+
+
+
+                        </div>
+
+
+
+                        <div class="col-md-6 py-4">
+
+
+
+
+
+
+                            <div class="form-floating">
+
+                                
+                                    <input class=" form-control" type="file" id="product-image" name="product-image" placeholder="Product Image" />
+                                <label class="form-label" for="product-image"><i class="fa-regular fa-image"></i> Product Image</label>
+                                
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="col-12 py-4">
+                            <div class="form-floating">
+
+
+                                
+                                <textarea class="form-control" type="text" id="product-description" name="product-description" placeholder="Product Desctiption"></textarea>
+                                <label class="" for="product-description"><i class="fa-regular fa-rectangle-list"></i> Product Desctiption</label>
+                            </div>
+                        </div>
+
+                        <div class="col-4 pt-4">
+                            <button class="btn btn-primary" type="button">                    <i class="fa-solid fa-circle-plus"></i>
+ Add Product</button>
+                        </div>
+
+                        <div class="col-6 offset-2 pt-4 d-flex px-1 justify-content-center align-items-center">
+                         <div class="input-group">
+                            <div class="input-group-text">
+              <i class='fa-solid fa-magnifying-glass'></i> 
+                            </div>
+                 
+                            <input class="form-control" class="border border-start-0 w-100" type="text" placeholder="    Search Products">
+                         </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+            </form>
+
+        </section>
+
+<div class="my-5" style="height: 1px;"></div>
+        <section class="products-and-search-section">
+
+            <div class="header-section">
+                <!-- fontawesome icon -->
+                <h2>Product Inventory</h2>
+
+                <!-- badge of total products -->
+
+            </div>
+
+
+            <!-- cards items -->
+
+
+
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Store Management System</h2>
+        <p>Efficiently manage your product inventory with our easy-to-use system.</p>
+        <p>© 2023 Store Management System. All rights reserved.</p>
+        <p>Made with <!-- hearticon--> by Route Academy</p>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
