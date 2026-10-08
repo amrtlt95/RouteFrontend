@@ -95,7 +95,9 @@ return localStorage.getItem("allProducts");
 
 }
 
-
+function setLocalStorageArray(array){
+    localStorage.setItem("allProducts",JSON.stringify(array));
+}
 
 function getProductCardWrapper(){
     return document.getElementById("products-cards-container");
@@ -143,7 +145,7 @@ if(category==="Laptop")
 
 }
 
-function createProductCard(productName, productPrice,productCategory, productDescription,productImage){
+function createProductCard(productName, productPrice,productCategory, productDescription,productImage,index){
 
 return ` <div class="col">
     <div class="card">
@@ -155,7 +157,7 @@ return ` <div class="col">
             <span class="price card-text fs-4 text-primary fw-medium">₹${productPrice}</span>
             ${getProductCategoryBadge(productCategory)}
             <div class="buttons d-flex">
-                <button class="btn border border-danger border-end-0 text-danger"><i class="fa-solid fa-trash-can"></i></button>
+                <button onclick="deleteProduct(${index})" class="btn border border-danger border-end-0 text-danger"><i class="fa-solid fa-trash-can"></i></button>
                 <button class="btn border border-warning text-warning"><i class="fa-solid fa-pencil"></i></button>
             </div>
         </div>
@@ -206,7 +208,7 @@ allProducts = JSON.parse(localStorageArray);
 
 
 allProducts.push(product);
-localStorage.setItem("allProducts",JSON.stringify(allProducts))
+setLocalStorageArray(allProducts);
 
 
 
@@ -215,7 +217,12 @@ console.log(allProducts);
 displayAllProducts();
 }
 
-
+function deleteProduct(index){
+    var allProducts = JSON.parse(getLocalStorageArray());
+    allProducts.splice(index,1);
+setLocalStorageArray(allProducts);
+    displayAllProducts();
+}
 
 //add is done :)
 
@@ -243,7 +250,7 @@ var productImage = allProducts[i]['image'];
 
 
 
-    cartona+= createProductCard(productName,productPrice,productCategory,productDescription,productImage);
+    cartona+= createProductCard(productName,productPrice,productCategory,productDescription,productImage,i);
 
 
 }
