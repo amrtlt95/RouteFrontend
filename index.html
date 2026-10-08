@@ -103,9 +103,21 @@
                             </div>
                         </div>
 
-                        <div class="col-4 pt-4">
-                            <button onclick="addProduct()" class="btn btn-primary" type="button">                    <i class="fa-solid fa-circle-plus"></i>
+                        <div class="col-4 pt-4 d-flex align-items-center gap-4">
+                            <button onclick="addProduct()" id="add-product-button" class="btn btn-primary" type="button">                    <i class="fa-solid fa-circle-plus"></i>
+                                
  Add Product</button>
+
+  <button onclick="editProduct()" id="edit-product-button" class="d-none btn btn-warning" type="button">
+    <i class="fa-solid fa-pencil"></i>
+    Edit Product</button>
+
+
+
+    <button onclick="cancelEditProduct()" id="cancel-edit-product-button" class="d-none btn btn-danger" type="button">
+    <i class="fa-solid fa-ban"></i>
+    Cancel</button>
+
                         </div>
 
                         <div class="col-6 offset-2 pt-4 d-flex px-1 justify-content-center align-items-center">
@@ -185,7 +197,7 @@
         <p class="fs-6 fw-normal">Efficiently manage your product inventory with our easy-to-use system.</p>
             </div>
               
-           
+          
           
                 <div class="col-md-6 text-md-end">
         <p class="fs-6 fw-normal mb-1 ">© 2023 Store Management System. All rights reserved.</p>
