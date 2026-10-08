@@ -104,7 +104,7 @@
                         </div>
 
                         <div class="col-4 pt-4">
-                            <button class="btn btn-primary" type="button">                    <i class="fa-solid fa-circle-plus"></i>
+                            <button onclick="addProduct()" class="btn btn-primary" type="button">                    <i class="fa-solid fa-circle-plus"></i>
  Add Product</button>
                         </div>
 
@@ -146,7 +146,7 @@
 
          
              
-                    <span class="badge text-bg-primary fs-6">3 Products</span>
+                    <span id="products-length" class="badge text-bg-primary fs-6">Products</span>
              
               </div>
              
@@ -161,133 +161,9 @@
 
 
 
-              <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
-  <div class="col">
-    <div class="card">
-      <img src="images/image.png" class="card-img-top object-fit-cover" alt="...">
-      <div class="card-body">
-        <h3 class="fs-5 fw-medium card-title">Card title</h3>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div class="card-group bottom-section d-flex justify-content-between align-items-center">
-            <span class="price card-text fs-4 text-primary fw-medium">50,000</span>
-            <div class="buttons d-flex">
-                <button class="btn border border-danger border-end-0 text-danger"><i class="fa-solid fa-trash-can"></i></button>
-                <button class="btn border border-warning text-warning"><i class="fa-solid fa-pencil"></i></button>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
+              <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4" id="products-cards-container">
+ 
 
-  <div class="col">
-    <div class="card">
-      <img src="images/image.png" class="card-img-top object-fit-cover" alt="...">
-      <div class="card-body">
-        <h3 class="fs-5 fw-medium card-title">Card title</h3>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div class="card-group bottom-section d-flex justify-content-between align-items-center">
-            <span class="price card-text fs-4 text-primary fw-medium">50,000</span>
-            <div class="buttons d-flex">
-                <button class="btn border border-danger border-end-0 text-danger"><i class="fa-solid fa-trash-can"></i></button>
-                <button class="btn border border-warning text-warning"><i class="fa-solid fa-pencil"></i></button>
-            </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-
-  <div class="col">
-    <div class="card">
-      <img src="images/image.png" class="card-img-top object-fit-cover" alt="...">
-      <div class="card-body">
-        <h3 class="fs-5 fw-medium card-title">Card title</h3>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div class="card-group bottom-section d-flex justify-content-between align-items-center">
-            <span class="price card-text fs-4 text-primary fw-medium">50,000</span>
-            <div class="buttons d-flex">
-                <button class="btn border border-danger border-end-0 text-danger"><i class="fa-solid fa-trash-can"></i></button>
-                <button class="btn border border-warning text-warning"><i class="fa-solid fa-pencil"></i></button>
-            </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-  <div class="col">
-    <div class="card">
-      <img src="images/image.png" class="card-img-top object-fit-cover" alt="...">
-      <div class="card-body">
-        <h3 class="fs-5 fw-medium card-title">Card title</h3>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div class="card-group bottom-section d-flex justify-content-between align-items-center">
-            <span class="price card-text fs-4 text-primary fw-medium">50,000</span>
-            <div class="buttons d-flex">
-                <button class="btn border border-danger border-end-0 text-danger"><i class="fa-solid fa-trash-can"></i></button>
-                <button class="btn border border-warning text-warning"><i class="fa-solid fa-pencil"></i></button>
-            </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-  <div class="col">
-    <div class="card">
-      <img src="images/image.png" class="card-img-top object-fit-cover" alt="...">
-      <div class="card-body">
-        <h3 class="fs-5 fw-medium card-title">Card title</h3>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div class="card-group bottom-section d-flex justify-content-between align-items-center">
-            <span class="price card-text fs-4 text-primary fw-medium">50,000</span>
-            <div class="buttons d-flex">
-                <button class="btn border border-danger border-end-0 text-danger"><i class="fa-solid fa-trash-can"></i></button>
-                <button class="btn border border-warning text-warning"><i class="fa-solid fa-pencil"></i></button>
-            </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-
-  <div class="col">
-    <div class="card">
-      <img src="images/image.png" class="card-img-top object-fit-cover" alt="...">
-      <div class="card-body">
-        <h3 class="fs-5 fw-medium card-title">Card title</h3>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div class="card-group bottom-section d-flex justify-content-between align-items-center">
-            <span class="price card-text fs-4 text-primary fw-medium">50,000</span>
-            <div class="buttons d-flex">
-                <button class="btn border border-danger border-end-0 text-danger"><i class="fa-solid fa-trash-can"></i></button>
-                <button class="btn border border-warning text-warning"><i class="fa-solid fa-pencil"></i></button>
-            </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-
-  <div class="col">
-    <div class="card">
-      <img src="images/image.png" class="card-img-top object-fit-cover" alt="...">
-      <div class="card-body">
-        <h3 class="fs-5 fw-medium card-title">Card title</h3>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div class="card-group bottom-section d-flex justify-content-between align-items-center">
-            <span class="price card-text fs-4 text-primary fw-medium">50,000</span>
-            <div class="buttons d-flex">
-                <button class="btn border border-danger border-end-0 text-danger"><i class="fa-solid fa-trash-can"></i></button>
-                <button class="btn border border-warning text-warning"><i class="fa-solid fa-pencil"></i></button>
-            </div>
-        </div>
-      </div>
-    </div>
-</div>
 </div>
 
 
@@ -311,7 +187,7 @@
               
            
           
-                <div class="col-md-6 text-end">
+                <div class="col-md-6 text-md-end">
         <p class="fs-6 fw-normal mb-1 ">© 2023 Store Management System. All rights reserved.</p>
         <p class="fs-6 fw-normal">Made with <i class="fa-solid fa-heart text-danger"></i> by Amr Talaat From Route Academy</p>
             </div>
@@ -319,6 +195,7 @@
     </footer>
 
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
