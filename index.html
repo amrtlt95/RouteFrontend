@@ -71,24 +71,82 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add a contact</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form>
+    
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
+           <figure class="d-flex justify-content-center">
+            <img class="d-block w-50 rounded-circle" src="img/blank_profile.svg" alt="profile picture">
+           </figure>
+            <input type="file" class="form-control" id="profile-picture" name="profile-picture">
           </div>
+
+
+
+
+
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <label for="name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="name" name="name">
+          </div>
+
+
+
+
+          <div class="mb-3">
+            <label for="email" class="col-form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+
+
+
+
+
+                  <div class="mb-3">
+            <label for="phone" class="col-form-label">Phone:</label>
+            <input type="tel" class="form-control" id="phone" name="phone">
+          </div>
+
+
+
+
+
+
+
+
+
+                  <div class="mb-3">
+            <label for="address" class="col-form-label">Address:</label>
+            <input type="text" class="form-control" id="address" name="address">
+          </div>
+
+
+
+
+           <div class="mb-3">
+            <label for="group-list" class="col-form-label">Group:</label>
+            <select name="group-list" id="group-list">
+                <option value="6" selected>Select a group</option>
+                <option value="1">Family</option>
+                <option value="2">Friends</option>
+                <option value="3">Work</option>
+                <option value="4">School</option>
+                <option value="5" selected>Other</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="notes" class="col-form-label">Notes:</label>
+            <textarea class="form-control" id="notes" name="notes"></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-primary">Create a contact</button>
       </div>
     </div>
   </div>

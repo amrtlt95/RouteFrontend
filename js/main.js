@@ -103,39 +103,100 @@ Web App
 
 //as i understood , the model is like this
 //contact {name, phone, email}
-class Contact{
-  nameRegex = "/^[a-zA-Z]{3,}(\s*[a-zA-z])*$/m";
-  phoneRegex = "/^((\+|00)2)?0(([1-9](\d{7}))|(10|11|12|15)\d{8})$/m"
-  emailRegex = "/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/gm"
+class Contact {
 
+ 
+  
+  
+ 
 
-constructor(name,phone,email){
-   this.setName(name);
+  constructor(name, phone, email, address, group, notes, photo) {
+    this.setName(name);
     this.setPhone(phone);
     this.setEmail(email);
+    this.setAddress(address);
+    this.setGroup(group);
+    this.setNotes(notes);
+    this.setPhoto(photo);
   }
 
 
-   getName(){return this.name}
+  getPhoto() { var imgDirectory = "img/"; return `${imgDirectory}${this.image}` }
+  setPhoto(photo) {
+    var photoRegex = /.+\.(jpg|jpeg|png|bmp|JPG|JPEG|PNG|BMP)/m;
+    if (`${photo}`.length !== 0 && (photoRegex.test(photo))) {
+          this.photo = photo;
+    } else {
+  
+      this.photo = `blank_profile.svg`;
+    }
+  }
+  getNotes() { return this.notes; }
+  setNotes(notes) { this.notes = notes; }
+  getGroup() { return this.group; }
+  setGroup(group) {
+    var groupRegex = /^[1-5]$/
+    if (groupRegex.test(group)) {
+      this.group = group;
+    } else {
+      group = null;
+    }
+  }
+  getAddress() { return this.address; }
+  setAddress(address) { this.address = address; }
+  getName() {
+    return this.name
+  }
   //  setName(name) {this.name=name} //validation needs
-  setName(name){this.nameRegex.test(name);}
+  setName(name) {
+     var nameRegex = /^[a-zA-Z]{3,}(\s*[a-zA-z])*$/m;
 
-    getPhone(){return this.phone}
-   setPhone(phone) {this.phone=phone}  //validation needs
+    if (nameRegex.test(name)) {
+      this.name = name;
+    } else {
+      this.name = null;
+    }
+  }
+
+  getPhone() {
+    return this.phone
+  }
+  setPhone(phone) {
+     var phoneRegex = /^((\+|00)2)?0(([1-9](\d{7}))|(10|11|12|15)\d{8})$/m;
+    if (phoneRegex.test(phone)) {
+      this.phone = phone;
+    } else {
+      this.phone = null;
+    }
+  }  //validation needs
 
 
 
-       getEmail(){return this.email}
-   setEmail(email) {this.email=email}   //validation needs
+  getEmail() {
+    return this.email
+  }
+  setEmail(email) {
+    var emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/gm;
+    if (emailRegex.test(email)) {
+      this.email = email;
+    } else {
+      this.email = null;
+    }
+  }   //validation needs
 
-   
+
 }
-var contact = new Contact("amr",0,0)
 
-console.log(contact.name);
-//will have methods of get and set 
+//will have methods of get and set
+
+//class is created
+//next step is to take the input from the user via the modal
+//the modal needs to be adjusted
+
+
+
 //what is modal ?
-//---our modal 
+//---our modal
 //--- or bootstrap modal ?
 
 
@@ -177,8 +238,62 @@ will use this modal with some adjustments:-
 
 */
 
-//we need validation using regex 
-//then after complete validation we will append the contact object to an array 
+function mapContactFromTheModal(){
+  var form = ".modal-body>form";
+ var name = document.querySelector(`${form} #name`).value;
+ var email = document.querySelector(`${form} #email`).value;
+ var phone = document.querySelector(`${form} #phone`).value;
+ var address = document.querySelector(`${form} #address`).value;
+ var group = document.querySelector(`${form} #group-list`).value;
+ var notes = document.querySelector(`${form} #notes`).value;
+ var photoContainer = document.querySelector(`${form} #profile-picture`).files;
+ var photo="";
+//  console.log(photoContainer); 
+//  return;
+ if(photoContainer.length !==0){
+  photo=photoContainer[0]['name'];
+ }
+
+  return new Contact(name,phone,email,address,group,notes,photo);
+}
+
+function getLocalstorageData(){
+  return localStorage.getItem("contacts");
+}
+
+
+function getArrayFromLocalStorage(){
+  if(getLocalstorageData()===null){
+    return null;
+  }
+  return JSON.parse(getLocalstorageData());
+}
+
+function setNewLocalstorageData(array){
+  localStorage.setItem("contacts",array);
+}
+
+var createButton = document.querySelector(".modal-footer>.btn.btn-primary");
+
+createButton.addEventListener("click",function(){
+ 
+
+   var contact = mapContactFromTheModal();
+
+   var contactArray = [];
+   if(getArrayFromLocalStorage()!==null){
+    contactArray = getArrayFromLocalStorage();
+   }
+
+   contactArray.push(contact);
+   setNewLocalstorageData(JSON.stringify(contactArray));
+  
+}
+  );
+
+
+//we need validation using regex
+//then after complete validation we will append the contact object to an array
 //then we will store localstorage of array of contacts
 
 //we will show alert using SweatAlert that the contact is added
