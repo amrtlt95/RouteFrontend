@@ -105,12 +105,7 @@ Web App
 //contact {name, phone, email}
 class Contact {
 
- 
-  
-  
- 
-
-  constructor(name, phone, email, address, group, notes, photo) {
+  constructor(name, phone, email, address, group, notes, photo, isFavorite, isEmergency) {
     this.setName(name);
     this.setPhone(phone);
     this.setEmail(email);
@@ -118,8 +113,27 @@ class Contact {
     this.setGroup(group);
     this.setNotes(notes);
     this.setPhoto(photo);
+    this.setIsFavorite(isFavorite);
+    this.setIsEmergency(isEmergency);
   }
 
+
+  getIsFavorite(){return this.isFavorite;}
+  setIsFavorite(isFavorite){
+    if(isFavorite ==1){
+      this.isFavorite=isFavorite;
+    }else{
+      this.isFavorite=null;
+    }
+  }
+  getIsEmergency(){return this.isEmergency;}
+  setIsEmergency(isEmergency){
+    if(isEmergency ==1){
+      this.isEmergency=isEmergency;
+    }else{
+      this.isEmergency=null;
+    }
+  }
 
   getPhoto() { var imgDirectory = "img/"; return `${imgDirectory}${this.image}` }
   setPhoto(photo) {
@@ -246,15 +260,21 @@ function mapContactFromTheModal(){
  var address = document.querySelector(`${form} #address`).value;
  var group = document.querySelector(`${form} #group-list`).value;
  var notes = document.querySelector(`${form} #notes`).value;
- var photoContainer = document.querySelector(`${form} #profile-picture`).files;
- var photo="";
+ var photo = document.querySelector(`${form} #profile-picture`).files;
+
+ var isFavorite= document.querySelector(`${form} #favorite`);
+ var isEmergency= document.querySelector(`${form} #emergency`);
 //  console.log(photoContainer); 
 //  return;
- if(photoContainer.length !==0){
-  photo=photoContainer[0]['name'];
+
+isFavorite = isFavorite.checked? isFavorite.value : null;
+isEmergency = isEmergency.checked? isEmergency.value : null;
+// return;
+ if(photo.length !==0){
+  photo=photo[0]['name'];
  }
 
-  return new Contact(name,phone,email,address,group,notes,photo);
+  return new Contact(name,phone,email,address,group,notes,photo,isFavorite,isEmergency);
 }
 
 function getLocalstorageData(){
@@ -279,6 +299,9 @@ createButton.addEventListener("click",function(){
  
 
    var contact = mapContactFromTheModal();
+
+console.log(contact);
+   return;
 
    var contactArray = [];
    if(getArrayFromLocalStorage()!==null){

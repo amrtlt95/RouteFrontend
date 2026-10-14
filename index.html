@@ -69,7 +69,7 @@
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content ">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Add a contact</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -77,11 +77,12 @@
       <div class="modal-body">
         <form>
     
-          <div class="mb-3">
-           <figure class="d-flex justify-content-center">
+          <div class="mb-3 d-flex  align-items-center justify-content-center flex-column gap-3">
+           
             <img class="d-block w-50 rounded-circle" src="img/blank_profile.svg" alt="profile picture">
-           </figure>
-            <input type="file" class="form-control" id="profile-picture" name="profile-picture">
+           
+           <label for="profile-picture" class="col-form-label btn btn-primary"> <i class="fa-solid fa-camera"></i> Choose a photo</label>
+            <input  type="file" class="d-none form-control" id="profile-picture" name="profile-picture">
           </div>
 
 
@@ -142,6 +143,30 @@
             <label for="notes" class="col-form-label">Notes:</label>
             <textarea class="form-control" id="notes" name="notes"></textarea>
           </div>
+
+
+           <div class="mb-3 d-flex justify-content-center align-items-center gap-4">
+           
+            <div class="favorite  d-flex gap-2">
+                 <input class="form-check-input" type="checkbox" id="favorite" name="favorite" value="1">
+            <label for="favorite" class="form-check-label"><i class="text-warning fa-solid fa-star"></i> Favorite</label>
+            </div>
+
+          
+
+
+               <div class="emergency d-flex gap-2">
+
+                <input class="form-check-input" type="checkbox" id="emergency" name="emergency" value="1">
+<!-- <button type="button" class="form-check-input"></button> -->
+                <label for="emergency" class="form-check-label"><i class="text-danger fa-solid fa-truck-medical"></i> Emergency</label>
+            </div>
+
+
+          </div>
+
+
+
         </form>
       </div>
       <div class="modal-footer">
