@@ -40,7 +40,7 @@
                 <div class="d-flex align-items-center gap-2">
                     <button id="addContactBtn" class="primary-btn">
                         <i class="fas fa-plus"></i>
-                        <span class="d-none d-md-inline">Add Contact</span>
+                        <span class="d-none d-md-inline" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Contact</span>
                         <span class="d-md-none">Add</span>
                     </button>
                     <button class="btn btn-light rounded-3 d-none d-md-flex align-items-center justify-content-center"
@@ -64,6 +64,38 @@
     <main class=" container-fluid container-md py-4 px-3 px-sm-5">
         <!-- Stats Cards -->
         <section class="mb-4">
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
             <div class="row g-3">
                 <div class="col-6 col-md-4">
                     <div class="stats-card p-4">

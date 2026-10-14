@@ -103,6 +103,36 @@ Web App
 
 //as i understood , the model is like this
 //contact {name, phone, email}
+class Contact{
+  nameRegex = "/^[a-zA-Z]{3,}(\s*[a-zA-z])*$/m";
+  phoneRegex = "/^((\+|00)2)?0(([1-9](\d{7}))|(10|11|12|15)\d{8})$/m"
+  emailRegex = "/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/gm"
+
+
+constructor(name,phone,email){
+   this.setName(name);
+    this.setPhone(phone);
+    this.setEmail(email);
+  }
+
+
+   getName(){return this.name}
+  //  setName(name) {this.name=name} //validation needs
+  setName(name){this.nameRegex.test(name);}
+
+    getPhone(){return this.phone}
+   setPhone(phone) {this.phone=phone}  //validation needs
+
+
+
+       getEmail(){return this.email}
+   setEmail(email) {this.email=email}   //validation needs
+
+   
+}
+var contact = new Contact("amr",0,0)
+
+console.log(contact.name);
 //will have methods of get and set 
 //what is modal ?
 //---our modal 
@@ -153,6 +183,11 @@ will use this modal with some adjustments:-
 
 //we will show alert using SweatAlert that the contact is added
 //we will display all contacts
+
+
+
+
+
 
 //-------------------------------------------------------------------------
 
