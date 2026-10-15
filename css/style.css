@@ -688,3 +688,20 @@ textarea {
 }
 
 
+#contactCardContainer{
+  .card{
+    .card-body{
+      .row{
+        .bottom-section{
+          a{
+            text-decoration: none;
+            color: inherit;
+          }
+          i{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
