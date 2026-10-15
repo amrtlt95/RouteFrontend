@@ -40,7 +40,8 @@
                 <div class="d-flex align-items-center gap-2">
                     <button id="addContactBtn" class="primary-btn">
                         <i class="fas fa-plus"></i>
-                        <span class="d-none d-md-inline" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Contact</span>
+                        <span class="d-none d-md-inline" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
+                            Contact</span>
                         <span class="d-md-none">Add</span>
                     </button>
                     <button class="btn btn-light rounded-3 d-none d-md-flex align-items-center justify-content-center"
@@ -67,115 +68,123 @@
 
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content ">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Add a contact</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-    
-          <div class="mb-3 d-flex  align-items-center justify-content-center flex-column gap-3">
-           
-            <img class="d-block w-50 rounded-circle" src="img/blank_profile.svg" alt="profile picture">
-           
-           <label for="profile-picture" class="col-form-label btn btn-primary"> <i class="fa-solid fa-camera"></i> Choose a photo</label>
-            <input  type="file" class="d-none form-control" id="profile-picture" name="profile-picture">
-          </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add a contact</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+
+                                <div class="mb-3 d-flex  align-items-center justify-content-center flex-column gap-3">
+
+                                    <img class="d-block w-50 rounded-circle" src="img/blank_profile.svg"
+                                        alt="profile picture">
+
+                                    <label for="profile-picture" class="col-form-label btn btn-primary"> <i
+                                            class="fa-solid fa-camera"></i> Choose a photo</label>
+                                    <input type="file" class="d-none form-control" id="profile-picture"
+                                        name="profile-picture">
+                                </div>
 
 
 
 
 
-          <div class="mb-3">
-            <label for="name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="name" name="name">
-          </div>
+                                <div class="mb-3">
+                                    <label for="name" class="col-form-label">Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                </div>
 
 
 
 
-          <div class="mb-3">
-            <label for="email" class="col-form-label">Email:</label>
-            <input type="email" class="form-control" id="email" name="email">
-          </div>
-
-
-
-
-
-                  <div class="mb-3">
-            <label for="phone" class="col-form-label">Phone:</label>
-            <input type="tel" class="form-control" id="phone" name="phone">
-          </div>
+                                <div class="mb-3">
+                                    <label for="email" class="col-form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                </div>
 
 
 
 
 
+                                <div class="mb-3">
+                                    <label for="phone" class="col-form-label">Phone:</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
 
 
 
 
-                  <div class="mb-3">
-            <label for="address" class="col-form-label">Address:</label>
-            <input type="text" class="form-control" id="address" name="address">
-          </div>
 
 
 
 
-           <div class="mb-3">
-            <label for="group-list" class="col-form-label">Group:</label>
-            <select name="group-list" id="group-list">
-                <option value="6" selected>Select a group</option>
-                <option value="1">Family</option>
-                <option value="2">Friends</option>
-                <option value="3">Work</option>
-                <option value="4">School</option>
-                <option value="5" selected>Other</option>
-            </select>
-          </div>
 
-          <div class="mb-3">
-            <label for="notes" class="col-form-label">Notes:</label>
-            <textarea class="form-control" id="notes" name="notes"></textarea>
-          </div>
+                                <div class="mb-3">
+                                    <label for="address" class="col-form-label">Address:</label>
+                                    <input type="text" class="form-control" id="address" name="address">
+                                </div>
 
 
-           <div class="mb-3 d-flex justify-content-center align-items-center gap-4">
-           
-            <div class="favorite  d-flex gap-2">
-                 <input class="form-check-input" type="checkbox" id="favorite" name="favorite" value="1">
-            <label for="favorite" class="form-check-label"><i class="text-warning fa-solid fa-star"></i> Favorite</label>
+
+
+                                <div class="mb-3">
+                                    <label for="group-list" class="col-form-label">Group:</label>
+                                    <select class="form-select" name="group-list" id="group-list">
+                                        <option value="6" selected>Select a group</option>
+                                        <option value="1">Family</option>
+                                        <option value="2">Friends</option>
+                                        <option value="3">Work</option>
+                                        <option value="4">School</option>
+                                        <option value="5" selected>Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="notes" class="col-form-label">Notes:</label>
+                                    <textarea class="form-control" id="notes" name="notes"></textarea>
+                                </div>
+
+
+                                <div class="mb-3 d-flex justify-content-center align-items-center gap-4">
+
+                                    <div class="favorite  d-flex gap-2">
+                                        <input class="form-check-input" type="checkbox" id="favorite" name="favorite"
+                                            value="1">
+                                        <label for="favorite" class="form-check-label"><i
+                                                class="text-warning fa-solid fa-star"></i> Favorite</label>
+                                    </div>
+
+
+
+
+                                    <div class="emergency d-flex gap-2">
+
+                                        <input class="form-check-input" type="checkbox" id="emergency" name="emergency"
+                                            value="1">
+                                        <!-- <button type="button" class="form-check-input"></button> -->
+                                        <label for="emergency" class="form-check-label"><i
+                                                class="text-danger fa-solid fa-truck-medical"></i> Emergency</label>
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Create a contact</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-          
-
-
-               <div class="emergency d-flex gap-2">
-
-                <input class="form-check-input" type="checkbox" id="emergency" name="emergency" value="1">
-<!-- <button type="button" class="form-check-input"></button> -->
-                <label for="emergency" class="form-check-label"><i class="text-danger fa-solid fa-truck-medical"></i> Emergency</label>
-            </div>
-
-
-          </div>
-
-
-
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Create a contact</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -247,10 +256,77 @@
 
                 <!-- Contacts Grid -->
                 <section>
-                    <div id="contactCardContainer" class="row">
-                        <!-- <div  class="col-md-6 col-lg-12 col-xl-6 mb-4">
-                            <div class="contact-card">
-                               
+                    <div id="contactCardContainer" class="row d-flex flex-column">
+
+
+
+
+                        <div class="col-md-6 col-lg-12 col-xl-6 mb-4 ">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="row gx-3 gy-2">
+                                        <div class="col-4">
+                                            <img class="d-block w-100" src="img/avatar-1.jpg" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="row g-1">
+                                                <div class="col-12">
+                                                    <h5 class="card-title">Card title</h5>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle
+                                                    </h6>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <i class="fas fa-envelope"></i> <span>amr.talaat.main@gmail.com</span>
+                                        </div>
+
+
+                                        <div class="col-12">
+                                            <i class="fas fa-location-dot"></i>
+                                            <span>sedi gaber</span>
+                                        </div>
+
+
+                                        <div class="col-12">
+                                            <i class="fa-solid fa-users"></i>
+                                            <span>Friends</span>
+                                        </div>
+
+                                        
+                                    <div class="col-5">
+                                        <button><i class="fa-solid fa-phone"></i></button>
+                                        <button><i class="fas fa-envelope"></i></button>
+
+                                    </div>
+                                    </div>
+
+
+
+
+
+
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card’s content.</p>
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="col-md-6 col-lg-12 col-xl-6 mb-4 ">
+                            <div class="contact-card ">
+
                                 <div class="contact-card-header">
                                     <div class="d-flex align-items-start justify-content-start gap-3">
                                         <div class="position-relative flex-shrink-0  ">
@@ -276,7 +352,7 @@
                                         </div>
                                     </div>
 
-                                   
+
                                     <div class="contact-details">
                                         <div class="contact-detail-item">
                                             <div
@@ -295,13 +371,13 @@
                                         </div>
                                     </div>
 
-                               
+
                                     <div class="contact-tags">
                                         <span class="contact-tag d-inline-flex align-items-center">friends</span>
                                     </div>
                                 </div>
 
-                             
+
                                 <div class="contact-card-actions">
                                     <div class="action-buttons-left">
                                         <a href="tel:01161615618" id="callBtn" class="action-button call" title="Call">
@@ -316,20 +392,20 @@
                                         <button class="action-button favorite" id="favBtn" title="Favorite">
                                             <i class="far fa-star"></i>
                                         </button>
-                                        <button class="action-button emergency"id="emergncyBtn" title="Emergency">
+                                        <button class="action-button emergency" id="emergncyBtn" title="Emergency">
                                             <i class="far fa-heart"></i>
                                         </button>
                                         <button class="action-button edit" id="editBtn" title="Edit">
                                             <i class="fas fa-pen"></i>
                                         </button>
-                                        <button class="action-button delete"id="deleteBtn" title="Delete">
+                                        <button class="action-button delete" id="deleteBtn" title="Delete">
                                             <i class="fas fa-trash"></i>
                                         </button>
                                     </div>
                                 </div>
                             </div>
 
-                        </div> -->
+                        </div>
 
                         <!-- ⚠️⚠️⚠️⚠️ if no contact -->
                         <!-- <div class="col-12 text-center py-5">
@@ -390,7 +466,7 @@
                         </div>
                     </section>
 
-                   
+
 
                     <!-- Emergency Contacts Section -->
                     <section class="sidebar-section">
@@ -550,7 +626,7 @@
                             <button type="button" id="cancelModalBtn" class="btn btn-light flex-grow-1 py-3">
                                 Cancel
                             </button>
-                            <button type="button" id="submitModalBtn" class="btn primary-btn flex-grow-1 py-3" >
+                            <button type="button" id="submitModalBtn" class="btn primary-btn flex-grow-1 py-3">
                                 <i class="fas fa-check me-2"></i>Save Contact
                             </button>
                         </div>

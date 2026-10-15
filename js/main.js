@@ -289,6 +289,12 @@ function getArrayFromLocalStorage(){
   return JSON.parse(getLocalstorageData());
 }
 
+function setTotalContactsNumberOnPage(){
+  var contactsNumberInPage = document.getElementById("totalContactsSpan");
+  var contactsArray = getArrayFromLocalStorage();
+  contactsNumberInPage.innerHTML = contactsArray===null ? 0:contactsArray.length;
+  
+}
 function setNewLocalstorageData(array){
   localStorage.setItem("contacts",array);
 }
@@ -300,8 +306,7 @@ createButton.addEventListener("click",function(){
 
    var contact = mapContactFromTheModal();
 
-console.log(contact);
-   return;
+
 
    var contactArray = [];
    if(getArrayFromLocalStorage()!==null){
@@ -310,10 +315,18 @@ console.log(contact);
 
    contactArray.push(contact);
    setNewLocalstorageData(JSON.stringify(contactArray));
-  
+
 }
   );
 
+  function displayContacts(){
+    var contactsArray = getArrayFromLocalStorage();
+    if(contactsArray===null) return;
+    for(var i=0; i<contactsArray.length;i++){
+      
+    }
+
+  }
 
 //we need validation using regex
 //then after complete validation we will append the contact object to an array
