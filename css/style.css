@@ -699,6 +699,19 @@ textarea {
           }
           i{
             cursor: pointer;
+
+            &.fa-star:hover{
+              color:#ffc107;
+            }
+            &.fa-heart:hover{
+              color:#dc3545;
+            }
+            &.fa-pen:hover{
+color:#6f42c1;
+            }
+            &.fa-trash:hover{
+              color:#dc3545;
+            }
           }
         }
       }

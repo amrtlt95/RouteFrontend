@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/phone-book.png" type="image/x-icon">
+    <title>ContactHub - Smart Contact Manager</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row gx-3 gy-2">
+                <div class="top-container d-flex align-items-center gap-3">
+                    <div class="col-3 mb-1 position-relative">
+                        <img class="d-block w-100 rounded-4" src="${contactImage}" alt="">
+                        ${isFavourite}
+
+
+
+                        ${isEmergency}
+
+
+
+                    </div>
+                    <div class="col-8">
+                        <div class="row g-1">
+                            <div class="col-12">
+                                <h5 class="card-title">${contactName}</h5>
+                            </div>
+
+                            <div class="col-12">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">
+                                    <div
+                                        class="d-inline-block px-2 py-1 bg-primary-subtle text-primary-emphasis rounded-2">
+                                        <i class="fa-xs fa-solid fa-phone"></i>
+                                    </div> <span class="text-light-emphasis">${contactNumber}</span>
+                                </h6>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex align-items-center gap-2">
+                    <div style="background-color: rgb(230, 224, 241);" class="d-inline-block px-2 py-1 rounded-2"><i
+                            style="color: rgb(111, 66, 193);" class="fas fa-envelope"></i></div>
+                    <span>${contactEmail}</span>
+                </div>
+
+
+                <div class="col-12 d-flex gap-2  align-items-center">
+                    <div class="bg-success-subtle d-inline-block px-2 py-1  rounded-2">
+                        <i " class=" text-success fas fa-location-dot"></i>
+                    </div>
+
+                    <span>${contactAddress}</span>
+                </div>
+
+
+                <div class="col-12 d-flex gap-2 align-items-center mb-4">
+
+                    <div class="bg-primary-subtle d-inline-block px-2 py-1  rounded-2">
+                        <i " class=" text-primary fas fa-users"></i>
+                    </div>
+                    <span>${contactGroup}</span>
+                </div>
+
+
+                <div class="icons-container d-flex justify-content-between">
+                    <div class=" bottom-section d-flex gap-2">
+
+
+                        <div class="bg-success-subtle d-inline-block p-2  rounded-2" title="Call">
+
+
+                            <a href="tel:${contactNumber}"> <i class=" text-success fa-solid fa-phone"></i></a>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                        <div style="background-color: rgb(230, 224, 241);" class="d-inline-block p-2 rounded-2"
+                            title="Email">
+                            <a href="mailto:${contactEmail}"> <i style="color: rgb(111, 66, 193);"
+                                    class="fas fa-envelope"></i></a>
+
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="bottom-section d-flex justify-content-center gap-2 align-items-center">
+                        <div class="bg-secondary-subtle p-2 rounded-2" title="Favorites">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="bg-secondary-subtle p-2 rounded-2" title="Emergency">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="bg-secondary-subtle p-2 rounded-2" title="Edit">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                        <div class="bg-secondary-subtle p-2 rounded-2" title="Delete">
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

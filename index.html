@@ -40,7 +40,7 @@
                 <div class="d-flex align-items-center gap-2">
                     <button id="addContactBtn" class="primary-btn">
                         <i class="fas fa-plus"></i>
-                        <span class="d-none d-md-inline" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
+                        <span onclick="addContact()" class="d-none d-md-inline" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
                             Contact</span>
                         <span class="d-md-none">Add</span>
                     </button>
@@ -96,7 +96,8 @@
 
                                 <div class="mb-3">
                                     <label for="name" class="col-form-label">Name:</label>
-                                    <input type="text" class="form-control" id="name" name="name">
+                                    <input type="text" class="mb-2 form-control" id="name" name="name">
+                                    <p class="d-none py-2 alert alert-danger">Name at least must have 3 charachters</p>
                                 </div>
 
 
@@ -104,7 +105,8 @@
 
                                 <div class="mb-3">
                                     <label for="email" class="col-form-label">Email:</label>
-                                    <input type="email" class="form-control" id="email" name="email">
+                                    <input type="email" class="mb-2 form-control" id="email" name="email">
+                                    <p class="d-none py-2 alert alert-danger">Invalid email</p>
                                 </div>
 
 
@@ -113,7 +115,8 @@
 
                                 <div class="mb-3">
                                     <label for="phone" class="col-form-label">Phone:</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                    <input type="tel" class="mb-2 form-control" id="phone" name="phone">
+                                    <p class="d-none py-2 alert alert-danger">Invalid egyptian phone number</p>
                                 </div>
 
 
@@ -134,14 +137,15 @@
 
                                 <div class="mb-3">
                                     <label for="group-list" class="col-form-label">Group:</label>
-                                    <select class="form-select" name="group-list" id="group-list">
+                                    <select  class="mb-2 form-select" name="group-list" id="group-list">
                                         <option value="6" selected>Select a group</option>
-                                        <option value="1">Family</option>
-                                        <option value="2">Friends</option>
-                                        <option value="3">Work</option>
-                                        <option value="4">School</option>
-                                        <option value="5" selected>Other</option>
+                                        <option value="Family">Family</option>
+                                        <option value="Friends">Friends</option>
+                                        <option value="Work">Work</option>
+                                        <option value="School">School</option>
+                                        <option value="Other">Other</option>
                                     </select>
+                                    <p class="d-none py-2 alert alert-danger">Choose a group</p>
                                 </div>
 
                                 <div class="mb-3">
@@ -181,6 +185,7 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Create a contact</button>
+                            <button type="button" class="d-none btn btn-warning">Update a contact</button>
                         </div>
                     </div>
                 </div>
@@ -239,7 +244,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
                         <div class="mb-3 mb-md-0">
                             <h2 class="h3 fw-bold text-dark">All Contacts</h2>
-                            <p class="text-muted mb-0">Manage and organize your <span id="totalContactsSpan">1</span>
+                            <p class="text-muted mb-0">Manage and organize your <span id="totalContactsSpan">0</span>
                                 contacts</p>
                         </div>
                     </div>
@@ -255,166 +260,27 @@
                 </section>
 
                 <!-- Contacts Grid -->
-                <section>
-                    <div id="contactCardContainer" class="row d-flex flex-column">
-
-
-
-
-                        <div class="col-md-6 col-lg-12 col-xl-6 mb-4 ">
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <div class="row gx-3 gy-2">
-                                        <div class="col-4">
-                                            <img class="d-block w-100" src="img/avatar-1.jpg" alt="">
-                                        </div>
-                                        <div class="col-8">
-                                            <div class="row g-1">
-                                                <div class="col-12">
-                                                    <h5 class="card-title">Card title</h5>
-                                                </div>
-
-                                                <div class="col-12">
-                                                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle
-                                                    </h6>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <i class="fas fa-envelope"></i> <span>amr.talaat.main@gmail.com</span>
-                                        </div>
-
-
-                                        <div class="col-12">
-                                            <i class="fas fa-location-dot"></i>
-                                            <span>sedi gaber</span>
-                                        </div>
-
-
-                                        <div class="col-12">
-                                            <i class="fa-solid fa-users"></i>
-                                            <span>Friends</span>
-                                        </div>
-
-
-                                        <div class="col-4 bottom-section">
-                                          <a href="tel:+201273885040">  <i class="fa-solid fa-phone"></i></a>
-                                            <i class="fas fa-envelope"></i>
-
-                                        </div>
-                                        <div class="bottom-section offset-1 col-7 d-flex justify-content-between align-items-center">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-heart"></i>
-                                            <i class="fas fa-pen"></i>
-                                            <i class="fas fa-trash"></i>
-                                        </div>
-                                    </div>
-
-                                </div>
+                <section class="cards-section">
+                     <div class="no-contact d-flex flex-column justify-content-center align-items-center">
+                            <div class="icon text-bg-secondary p-4 rounded-4 mb-4">
+                                <i class="fas fa-contact-book fa-xl"></i>
                             </div>
+                            <span class="text-secondary fw-semibold mb-1">No contacts found</span>
+                            <span class="text-secondary fw-normal"> Click <span class="fw-semibold">"Add Contact"</span> to get started </span>
                         </div>
+                    <div id="contactCardContainer" class="d-none row d-flex flex-column">
+
+                       
+
+
+                        
 
 
 
 
 
-                        <div class="col-md-6 col-lg-12 col-xl-6 mb-4 ">
-                            <div class="contact-card">
-
-                                <div class="contact-card-header">
-                                    <div class="d-flex align-items-start justify-content-start gap-3">
-                                        <div class="position-relative flex-shrink-0  ">
-                                            <img src="img\phone-book.png" alt="sssss"
-                                                class="contact-card-avatar object-fit-cover">
-                                            <div
-                                                class="badge-icon badge-heart d-flex justify-content-center align-items-center rounded-circle">
-                                                <i class="fas fa-heart-pulse"></i>
-                                            </div>
-                                            <div
-                                                class="badge-icon badge-star d-flex justify-content-center align-items-center rounded-circle">
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="flex-1 min-w-0 pt-1">
-                                            <h3 class="contact-card-name truncate m-0 ">sssss</h3>
-                                            <div class="d-flex align-items-center gap-2 mt-1">
-                                                <div class="contact-card-phone-container flex-shrink-0">
-                                                    <i class="contact-card-phone-icon fas fa-phone"></i>
-                                                </div>
-                                                <span class="contact-card-phone truncate">01161615618</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="contact-details">
-                                        <div class="contact-detail-item">
-                                            <div
-                                                class="contact-detail-icon-container d-flex align-items-center justify-content-center violet">
-                                                <i class="contact-detail-icon violet fas fa-envelope"></i>
-                                            </div>
-                                            <span class="contact-detail-text truncate">sssss@gmail.com</span>
-                                        </div>
-
-                                        <div class="contact-detail-item">
-                                            <div
-                                                class="contact-detail-icon-container d-flex align-items-center justify-content-center emerald">
-                                                <i class="contact-detail-icon emerald fas fa-location-dot"></i>
-                                            </div>
-                                            <span class="contact-detail-text truncate">gfsdgb</span>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="contact-tags">
-                                        <span class="contact-tag d-inline-flex align-items-center">friends</span>
-                                    </div>
-                                </div>
-
-
-                                <div class="contact-card-actions">
-                                    <div class="action-buttons-left">
-                                        <a href="tel:01161615618" id="callBtn" class="action-button call" title="Call">
-                                            <i class="fas fa-phone"></i>
-                                        </a>
-
-                                        <a class="action-button email" id="emailBtn" title="Email">
-                                            <i class="fas fa-envelope"></i>
-                                        </a>
-                                    </div>
-                                    <div class="action-buttons-right">
-                                        <button class="action-button favorite" id="favBtn" title="Favorite">
-                                            <i class="far fa-star"></i>
-                                        </button>
-                                        <button class="action-button emergency" id="emergncyBtn" title="Emergency">
-                                            <i class="far fa-heart"></i>
-                                        </button>
-                                        <button class="action-button edit" id="editBtn" title="Edit">
-                                            <i class="fas fa-pen"></i>
-                                        </button>
-                                        <button class="action-button delete" id="deleteBtn" title="Delete">
-                                            <i class="fas fa-trash"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- ⚠️⚠️⚠️⚠️ if no contact -->
-                        <!-- <div class="col-12 text-center py-5">
-                            <div class="d-flex align-items-center justify-content-center mx-auto mb-4 bg-secondary-subtle
-                                     rounded-4" style="width: 80px; height: 80px;">
-                                <i class="fas fa-address-book text-secondary fs-4"></i>
-                            </div>
-                            <p class="text-muted fw-semibold mb-1">No contacts found</p>
-                            <p class="text-secondary small">
-                                Click <strong>"Add Contact"</strong> to get started
-                            </p>
-                        </div> -->
+                      
+                      
                     </div>
                 </section>
 
@@ -443,21 +309,8 @@
                                         <p class="text-muted mb-0">No favorites yet</p>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div id="smallFavItem"
-                                        class="contact-item d-none justify-content-between align-items-center gap-3 p-2 rounded-3 mb-3">
-                                        <div class="flex-shrink-0">
-                                            <img src="./avatars/avatar-3.jpg" alt="sssss" class="contact-avatar" />
-                                        </div>
-                                        <div class="flex-grow-1 text-truncate">
-                                            <h4 class="mb-0 fw-medium text-dark small text-truncate">sssss</h4>
-                                            <p class="mb-0 text-muted small text-truncate">01161615618</p>
-                                        </div>
-                                        <a href="tel:01161615618"
-                                            class="call-btn d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <i class="fas fa-phone"></i>
-                                        </a>
-                                    </div>
+                                <div class="col-12 all-favorites">
+                                 
                                 </div>
                             </div>
                         </div>
@@ -485,21 +338,8 @@
                                         <p class="text-muted mb-0">No emergency contacts</p>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div id="smallEmergncyItem"
-                                        class="contact-item-emergency  d-none align-items-center gap-3 p-2 rounded-3">
-                                        <div class="flex-shrink-0">
-                                            <img src="./avatars/avatar-3.jpg" alt="sssss" class="contact-avatar" />
-                                        </div>
-                                        <div class="flex-grow-1 text-truncate">
-                                            <h4 class="mb-0 fw-medium text-dark small text-truncate">sssss</h4>
-                                            <p class="mb-0 text-muted small text-truncate">01161615618</p>
-                                        </div>
-                                        <a href="tel:01161615618"
-                                            class="call-btn-emergency call-btn-rose d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <i class="fas fa-phone"></i>
-                                        </a>
-                                    </div>
+                                <div class="col-12 all-emergencies">
+                                
                                 </div>
                             </div>
 
@@ -635,7 +475,7 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sweetalert2@11.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 
